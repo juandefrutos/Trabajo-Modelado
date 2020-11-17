@@ -18,45 +18,45 @@
         * 3.3.2 Descripción del Entorno de Software Actual
 
 ## 1 Introducción
-    Con la necesidad de ralentizar la pandemia que a todos nos afecta, el Ministerio de Sanidad, se puso en contacto con nosotros con el fin de crear una nueva aplicación de rastreo mediante la cual se tendrá localizado a todas las personas con el virus y a sus personas de contacto, para ya si de una vez dar un respiro a la economía española y salir a flote.  
+Con la necesidad de ralentizar la pandemia que a todos nos afecta, el Ministerio de Sanidad, se puso en contacto con nosotros con el fin de crear una nueva aplicación de rastreo mediante la cual se tendrá localizado a todas las personas con el virus y a sus personas de contacto, para ya si de una vez dar un respiro a la economía española y salir a flote. 
 
-    Para ello no solo hará falta la creación de esta plataforma de rastreo si no también la colaboración de todo el personal sanitario, las fuerzas de orden público y por último y más importante la concienciación ciudadana.  
+Para ello no solo hará falta la creación de esta plataforma de rastreo si no también la colaboración de todo el personal sanitario, las fuerzas de orden público y por último y más importante la concienciación ciudadana.  
 
-    Nos informa de la necesidad de crear una plataforma que permita rastrear y gestionar la información de los ciudadanos en la pandemia. El objetivo es mejorar la aplicación existente Radar Covid ya que, no ha dado los resultados esperados. El principal objetivo de la aplicación es ayudar a controlar la propagación del COVID – 19 a través de la identificación de los posibles contactos estrechos de casos confirmados.  
+Nos informa de la necesidad de crear una plataforma que permita rastrear y gestionar la información de los ciudadanos en la pandemia. El objetivo es mejorar la aplicación existente Radar Covid ya que, no ha dado los resultados esperados. El principal objetivo de la aplicación es ayudar a controlar la propagación del COVID – 19 a través de la identificación de los posibles contactos estrechos de casos confirmados.  
 
 ### 1.1 Alcance
-    Se pretende que la plataforma pueda llegar a toda la población española ya sean jóvenes o ancianos, por ello será multiplataforma y de fácil uso, para todos ellos que no estén familiarizados con las nuevas tecnologías.  
+Se pretende que la plataforma pueda llegar a toda la población española ya sean jóvenes o ancianos, por ello será multiplataforma y de fácil uso, para todos ellos que no estén familiarizados con las nuevas tecnologías.  
 
-    En principio, la aplicación se desarrollará para los sistemas operativo Android e iOS con vistas a ser ampliado en otros sistema.   
+En principio, la aplicación se desarrollará para los sistemas operativo Android e iOS con vistas a ser ampliado en otros sistema.   
 
-    Tendrá dos visiones diferentes para la población, la primera visión es la ‘usuario’ cualquier persona que acceda podrá informar y la segunda visión serán la que tengan los centros de salud, fuerzas del orden, rastreadores, Gobierno, Consejerías, Juntas, donde estos podrán manejar la aplicación y comprobar datos.
+Tendrá dos visiones diferentes para la población, la primera visión es la ‘usuario’ cualquier persona que acceda podrá informar y la segunda visión serán la que tengan los centros de salud, fuerzas del orden, rastreadores, Gobierno, Consejerías, Juntas, donde estos podrán manejar la aplicación y comprobar datos.
 
 ### 1.2 Objetivos
-    Nuestro principal objetivo es paralizar la expansión del virus y que poco a poco vaya disminuyendo los contagios comunitarios,por medio de los contactos estrechos, pero también sabemos que esta plataforma no funciona sola, hace falta personas que la den su uso y sin esas personas que puedan informar esta no servirá para nada.  
+Nuestro principal objetivo es paralizar la expansión del virus y que poco a poco vaya disminuyendo los contagios comunitarios,por medio de los contactos estrechos, pero también sabemos que esta plataforma no funciona sola, hace falta personas que la den su uso y sin esas personas que puedan informar esta no servirá para nada.  
 
-    Otro objetivo que contemplamos es la de tener localizados mediante localización GPS a los positivos por el COVID-19 y también los posibles positivos, con esto nos referimos a las personas de contacto con dichas personas 7 días antes.  
-    Gracias a ese objetivo podemos comprobar que las personas cumplan su respectiva cuarentena y tambien se logra conseguir con quien se ha encontrado en esos 7 días anteriores al positivo.    
+Otro objetivo que contemplamos es la de tener localizados mediante localización GPS a los positivos por el COVID-19 y también los posibles positivos, con esto nos referimos a las personas de contacto con dichas personas 7 días antes.  
+Gracias a ese objetivo podemos comprobar que las personas cumplan su respectiva cuarentena y tambien se logra conseguir con quien se ha encontrado en esos 7 días anteriores al positivo.    
 
-    El sistema de notificaciones de la aplicación avisará a los usuarios cuando hayan estado expuestos a otro usuario de la aplicación que haya sido diagnosticado de COVID y ha introducido un código facilitado por las autoridades sanitarias de su comunidad autónoma.
+El sistema de notificaciones de la aplicación avisará a los usuarios cuando hayan estado expuestos a otro usuario de la aplicación que haya sido diagnosticado de COVID y ha introducido un código facilitado por las autoridades sanitarias de su comunidad autónoma.
 
 ## 2 Información del Dominio del Problema
-    Esta aplicación surgió, con el problema de poder gestionar y rastrear la información de los ciudadanos durante la pandemia mundial que se sufre actualmente, con el fin de poder minimizar contagios y fallecidos. 
-    Gracias a esta aplicaion se podra identificar de manera más rápida y eficaz los contagios y/o posibles contagios con las personas de contacto.  
+Esta aplicación surgió, con el problema de poder gestionar y rastrear la información de los ciudadanos durante la pandemia mundial que se sufre actualmente, con el fin de poder minimizar contagios y fallecidos. 
+Gracias a esta aplicaion se podra identificar de manera más rápida y eficaz los contagios y/o posibles contagios con las personas de contacto.  
 
-    Cuando un usuario ha sido diagnosticado de COVID y ha introducido un código proporcionado por las autoridades sanitarias, la aplicación informará mediante el sistema de notificaciones a los usuarios de la aplicación que están en riesgo de haber sido contagiados. Estas personas serán contactadas por los responsables de la comunidad autónoma en la que se encuentren y se le realizarán las pruebas pertinentes.
+Cuando un usuario ha sido diagnosticado de COVID y ha introducido un código proporcionado por las autoridades sanitarias, la aplicación informará mediante el sistema de notificaciones a los usuarios de la aplicación que están en riesgo de haber sido contagiados. Estas personas serán contactadas por los responsables de la comunidad autónoma en la que se encuentren y se le realizarán las pruebas pertinentes.
 
 ### 2.1 Introducción al Dominio del Problema
-    •	La dificultad que genera esta situación de pandemia por la COVID es el no poder controlar los contagios que se generan ya que existen personas asintomáticas, que pueden ser positivos y sin que ellas se den cuenta y contagiar otras personas.
-    •	El otro gran problema es el control de las personas de contacto con las que ha estado un positivo en los anteriores 7 días.
-    •	También hay gente que puede saltarse las cuarentenas impuestas por las autoridades sanitarias con el fin de que el virus no se extienda y a esto se le suma la Ley de Protección de Datos con la que debes garantizar la privacidad e intimidad de las personas entre otras cosas.
-    •	En un momento de esta pandemia, se realizaron pruebas médicas masivas para poder tener controlado el virus en las zonas que se realizaba a las que las personas no acudían.  
+•	La dificultad que genera esta situación de pandemia por la COVID es el no poder controlar los contagios que se generan ya que existen personas asintomáticas, que pueden ser positivos y sin que ellas se den cuenta y contagiar otras personas.
+•	El otro gran problema es el control de las personas de contacto con las que ha estado un positivo en los anteriores 7 días.
+•	También hay gente que puede saltarse las cuarentenas impuestas por las autoridades sanitarias con el fin de que el virus no se extienda y a esto se le suma la Ley de Protección de Datos con la que debes garantizar la privacidad e intimidad de las personas entre otras cosas.
+•	En un momento de esta pandemia, se realizaron pruebas médicas masivas para poder tener controlado el virus en las zonas que se realizaba a las que las personas no acudían.  
 
-    Estos son los problemas que existen en cuanto al COVID, pero tambien existen otros problemas que hay en cuanto a la aplicación.  
+Estos son los problemas que existen en cuanto al COVID, pero tambien existen otros problemas que hay en cuanto a la aplicación.  
 
-    •	Las personas cuando sale una aplicación nueva pueden tardar en entenderla, pero nuestro objetivo es hacerla sencilla y clara. Este punto va destinado a las personas mayores que tienen menos funcionalidad con los smartphones y pueden tener problemas para poner en funcionamiento la aplicación.
-    •	Otro de los problemas más relevantes y el de hacer una aplicación que esté funcionando en segundo plano, que no tenga que estar abierta de continuo, y que todo el mundo puede que no tenga acceso a zonas de cobertura para actualizar la información.
+•	Las personas cuando sale una aplicación nueva pueden tardar en entenderla, pero nuestro objetivo es hacerla sencilla y clara. Este punto va destinado a las personas mayores que tienen menos funcionalidad con los smartphones y pueden tener problemas para poner en funcionamiento la aplicación.
+•	Otro de los problemas más relevantes y el de hacer una aplicación que esté funcionando en segundo plano, que no tenga que estar abierta de continuo, y que todo el mundo puede que no tenga acceso a zonas de cobertura para actualizar la información.
 
-    El máximo problema que tiene el crear una aplicación en cualquier categoría es que hay que pensar que NO TODAS LAS PERSONAS TIENEN SMARTPHONE.
+El máximo problema que tiene el crear una aplicación en cualquier categoría es que hay que pensar que NO TODAS LAS PERSONAS TIENEN SMARTPHONE.
 
 ### 2.2 Glosario de Términos
 **Asintomático**: persona que no muestra síntomas de una enfermedad o virus y pueden contagiárselo a los demás.  
@@ -96,11 +96,11 @@
 **Rastreo**: para nuestro caso, consiste en localizar a las personas que puedan haber estado expuestas al virus y seguirlas durante el periodo de incubación del virus, serán 10 días a partir del ultimo día en el que ha estado expuesto.
 
 ## 3 Descripción de la Situación Actual
-    Actualmente disponemos en España de la aplicación Radar COVID. Dada la situación excepcional que vivimos; una pandemia mundial, no se había planteado anteriormente la necesidad de una aplicación como esta. Radar COVID es una tecnología muy novedosa la cual necesita muchas mejoras y cambios. En esta sección se expondrán los aspectos a mejorar de esta aplicación. 
+Actualmente disponemos en España de la aplicación Radar COVID. Dada la situación excepcional que vivimos; una pandemia mundial, no se había planteado anteriormente la necesidad de una aplicación como esta. Radar COVID es una tecnología muy novedosa la cual necesita muchas mejoras y cambios. En esta sección se expondrán los aspectos a mejorar de esta aplicación. 
 ### 3.1 Pros y Contras de la Situación Actual
-    Últimamente con la crisis del covid-19 hemos estado obligados a estar encerrados en casa (mucha gente sin poder trabajar, otros con teletrabajo) ,ha mueto mucha gente por causa del virus, situaciones precarias de trabajadores del ámbito sanitario, muchos negocios y empresas han cerrado lo cuál vemos como un punto negativo para la economía tanto mundial como nacional,pero también, gracias a la crisis sanitaria muchas empresas en vez de desaparecer para siempre han conseguido reinventarse para poder dar un servicio el cual es necesario en estos tiempos ya puede ser creación de mascarillas por distintas fabricas, teletrabajos, repartos a domicilio de empresas que no lo hacían… por lo que la pandemia nos ha traído a la vez que puntos negativos tambien puntos positivos como este último.
+Últimamente con la crisis del covid-19 hemos estado obligados a estar encerrados en casa (mucha gente sin poder trabajar, otros con teletrabajo) ,ha mueto mucha gente por causa del virus, situaciones precarias de trabajadores del ámbito sanitario, muchos negocios y empresas han cerrado lo cuál vemos como un punto negativo para la economía tanto mundial como nacional,pero también, gracias a la crisis sanitaria muchas empresas en vez de desaparecer para siempre han conseguido reinventarse para poder dar un servicio el cual es necesario en estos tiempos ya puede ser creación de mascarillas por distintas fabricas, teletrabajos, repartos a domicilio de empresas que no lo hacían… por lo que la pandemia nos ha traído a la vez que puntos negativos tambien puntos positivos como este último.
 #### 3.1.1 Fortalezas de la Situación Actual
-    Pandemio llega para sustituir a RadarCovid mejorando muchos aspectos en lo que a RadarCovid se refiere. En los siguientes cuadros vamos a mostrar muchas ventajas de Pandemio fentre a otras aplicaciones de control de pandemia y por que debe ser la número 1 en todos los aspectos.
+Pandemio llega para sustituir a RadarCovid mejorando muchos aspectos en lo que a RadarCovid se refiere. En los siguientes cuadros vamos a mostrar muchas ventajas de Pandemio fentre a otras aplicaciones de control de pandemia y por que debe ser la número 1 en todos los aspectos.
 
 |1| Consumo de batería|
 |---------------|------------|
@@ -129,7 +129,7 @@
 
 
 #### 3.1.2 Debilidades de la Situación Actual
-    La aplicación de Pandemio también por su parte tiene distintos problemas los cuales debemos tener en cuenta para la creación de esta. Muchos problemas vienen asociados a la tecnología que tenemos ahora mismo la cual en muchas zonas sobre todo rurales no han llegado a entrar de la forma que debería. En los cuadros a continuación contamos con los distintos problemas que podemos encontrar.
+La aplicación de Pandemio también por su parte tiene distintos problemas los cuales debemos tener en cuenta para la creación de esta. Muchos problemas vienen asociados a la tecnología que tenemos ahora mismo la cual en muchas zonas sobre todo rurales no han llegado a entrar de la forma que debería. En los cuadros a continuación contamos con los distintos problemas que podemos encontrar.
 
 |1| Zonas muertas|
 |---------------|------------|
@@ -157,9 +157,9 @@
 |Descripción| Mucha gente solo usa su smartphone con conexión a internet cuando disponen de una red wifi para acceder a servicios en linea por lo que es necesario tener en cuenta a este tipo de personas para el uso diario de la aplicación. |
 |Comentarios| |  
 ### 3.2 Modelos de Procesos de Negocio Actuales
-    El modelo de proceso de negocio actual es Radar COVID. Esta aplicación se enmarca en un proyecto coordinado por la Secretaria de Estado de Digitalización e Inteligencia artificial, dependiente del Ministerio de Asuntos Económicos y Transformación Digital con el apoyo del Ministerio de Sanidad y las comunidades autónomas en su implementación y evaluación.
+El modelo de proceso de negocio actual es Radar COVID. Esta aplicación se enmarca en un proyecto coordinado por la Secretaria de Estado de Digitalización e Inteligencia artificial, dependiente del Ministerio de Asuntos Económicos y Transformación Digital con el apoyo del Ministerio de Sanidad y las comunidades autónomas en su implementación y evaluación.
 #### 3.2.1 Descripción de los Actores de Negocio Actuales
-    Esta sección contiene información sobre los actores de negocio de los modelos de procesos de negocio actuales.
+Esta sección contiene información sobre los actores de negocio de los modelos de procesos de negocio actuales.
 
 |1| Ciudadanos|
 |-----------|-----------|
@@ -225,7 +225,7 @@
 |Comentarios |         
 #### 3.2.2 Descripción de Procesos de Negocio Actuales
     
-    Esta sección contiene los procesos de negocio actuales. Los procesos de negocio describen un conjunto de actividades que convergen en la obtención de un determinado resultado. Estos procesos de negocio son automatizados por el sistema software.
+Esta sección contiene los procesos de negocio actuales. Los procesos de negocio describen un conjunto de actividades que convergen en la obtención de un determinado resultado. Estos procesos de negocio son automatizados por el sistema software.
 
     ![Diagrama de actividad](https://github.com/juandefrutos/Trabajo-Modelado/Procesos de negocio.png)
 
@@ -266,9 +266,9 @@ notificaciones|
 |Actores| *Diseñador *AR|
 |Comentarios| Los usuarios deben permitir la descarga de datos de la nube, al menos una vez al día, para ello, se conectarán a internet|         
 ### 3.2 Modelos de Procesos de Negocio Actuales
-    El modelo de proceso de negocio actual es Radar COVID. Esta aplicación se enmarca en un proyecto coordinado por la Secretaria de Estado de Digitalización e Inteligencia artificial, dependiente del Ministerio de Asuntos Económicos y Transformación Digital con el apoyo del Ministerio de Sanidad y las comunidades autónomas en su implementación y evaluación.
+El modelo de proceso de negocio actual es Radar COVID. Esta aplicación se enmarca en un proyecto coordinado por la Secretaria de Estado de Digitalización e Inteligencia artificial, dependiente del Ministerio de Asuntos Económicos y Transformación Digital con el apoyo del Ministerio de Sanidad y las comunidades autónomas en su implementación y evaluación.
 #### 3.2.1 Descripción de los Actores de Negocio Actuales
-    Esta sección contiene información sobre los actores de negocio de los modelos de procesos de negocio actuales.
+Esta sección contiene información sobre los actores de negocio de los modelos de procesos de negocio actuales.
 
 |1| Ciudadanos|
 |-----------|-----------|
@@ -334,7 +334,7 @@ notificaciones|
 |Comentarios |         
 #### 3.2.2 Descripción de Procesos de Negocio Actuales
     
-    Esta sección contiene los procesos de negocio actuales. Los procesos de negocio describen un conjunto de actividades que convergen en la obtención de un determinado resultado. Estos procesos de negocio son automatizados por el sistema software.
+Esta sección contiene los procesos de negocio actuales. Los procesos de negocio describen un conjunto de actividades que convergen en la obtención de un determinado resultado. Estos procesos de negocio son automatizados por el sistema software.
 
     ![Diagrama de actividad](https://github.com/juandefrutos/Trabajo-Modelado/Procesos de negocio.png)
 
@@ -375,9 +375,9 @@ notificaciones|
 |Actores| *Diseñador *AR|
 |Comentarios| Los usuarios deben permitir la descarga de datos de la nube, al menos una vez al día, para ello, se conectarán a internet|         
 ### 3.2 Modelos de Procesos de Negocio Actuales
-    El modelo de proceso de negocio actual es Radar COVID. Esta aplicación se enmarca en un proyecto coordinado por la Secretaria de Estado de Digitalización e Inteligencia artificial, dependiente del Ministerio de Asuntos Económicos y Transformación Digital con el apoyo del Ministerio de Sanidad y las comunidades autónomas en su implementación y evaluación.
+El modelo de proceso de negocio actual es Radar COVID. Esta aplicación se enmarca en un proyecto coordinado por la Secretaria de Estado de Digitalización e Inteligencia artificial, dependiente del Ministerio de Asuntos Económicos y Transformación Digital con el apoyo del Ministerio de Sanidad y las comunidades autónomas en su implementación y evaluación.
 #### 3.2.1 Descripción de los Actores de Negocio Actuales
-    Esta sección contiene información sobre los actores de negocio de los modelos de procesos de negocio actuales.
+Esta sección contiene información sobre los actores de negocio de los modelos de procesos de negocio actuales.
 
 |1| Ciudadanos|
 |-----------|-----------|
@@ -443,7 +443,7 @@ notificaciones|
 |Comentarios |         
 #### 3.2.2 Descripción de Procesos de Negocio Actuales
     
-    Esta sección contiene los procesos de negocio actuales. Los procesos de negocio describen un conjunto de actividades que convergen en la obtención de un determinado resultado. Estos procesos de negocio son automatizados por el sistema software.
+Esta sección contiene los procesos de negocio actuales. Los procesos de negocio describen un conjunto de actividades que convergen en la obtención de un determinado resultado. Estos procesos de negocio son automatizados por el sistema software.
 
     ![Diagrama de actividad](https://github.com/juandefrutos/Trabajo-Modelado/Procesos de negocio.png)
 
@@ -484,11 +484,11 @@ notificaciones|
 |Actores| *Diseñador *AR|
 |Comentarios| Los usuarios deben permitir la descarga de datos de la nube, al menos una vez al día, para ello, se conectarán a internet|         
 ### 3.3 Entorno Tecnológico Actual
-    El entorno tecnológico es todo aquello que rodea nuestra aplicación. En nuestra sociedad cada vez se implementan las TIC en los aspectos cotidianos y la llegada de la COVID-19 ha acelerado la implementación delas TIC como posibles soluciones al problema y con las cuales seremos capacesde avanzar y superar la pandemia actual.
+El entorno tecnológico es todo aquello que rodea nuestra aplicación. En nuestra sociedad cada vez se implementan las TIC en los aspectos cotidianos y la llegada de la COVID-19 ha acelerado la implementación delas TIC como posibles soluciones al problema y con las cuales seremos capacesde avanzar y superar la pandemia actual.
 #### 3.3.1 Descripción del Entrno de Hardware Actual
-    El entorno hardware de la aplicación viene dado principalmente por toda la red de comunicación española ya que esta a través de los teléfonos móviles nos permitirá la recopilación de datos y su retransmisión para poder almacenar dichos datos y ser capaces de usarlos de forma adecuada.
-    Este entorno hardware está limitado a que todas las personas usemos dispositivos móviles con conexión a internet y que este realmente funcione de forma correcta. Por otro lado también debemos de tener en cuenta otros dispositivos que podamos usar en sustitución de móviles ya sean tablets, smartbands, smartwachs o cualquier otro dispositivo.
+El entorno hardware de la aplicación viene dado principalmente por toda la red de comunicación española ya que esta a través de los teléfonos móviles nos permitirá la recopilación de datos y su retransmisión para poder almacenar dichos datos y ser capaces de usarlos de forma adecuada.
+Este entorno hardware está limitado a que todas las personas usemos dispositivos móviles con conexión a internet y que este realmente funcione de forma correcta. Por otro lado también debemos de tener en cuenta otros dispositivos que podamos usar en sustitución de móviles ya sean tablets, smartbands, smartwachs o cualquier otro dispositivo.
 
 #### 3.3.2 Descripción del Entorno de Software Actual
-    El software utilizado en esta aplicación se basa básicamente en la utilización del API de rastreo de contactos creada conjuntamente por Google y Apple. Que básicamente es una función añadida para poder realizar esta función de rastreo sin necesidad de crear una de cero. La creación de esta API nos facilita el funcionamiento tanto en sistemas operativos de Android como de IOs.
+El software utilizado en esta aplicación se basa básicamente en la utilización del API de rastreo de contactos creada conjuntamente por Google y Apple. Que básicamente es una función añadida para poder realizar esta función de rastreo sin necesidad de crear una de cero. La creación de esta API nos facilita el funcionamiento tanto en sistemas operativos de Android como de IOs.
     
