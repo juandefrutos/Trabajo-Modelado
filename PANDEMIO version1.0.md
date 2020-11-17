@@ -46,14 +46,14 @@ Gracias a esta aplicaion se podra identificar de manera más rápida y eficaz lo
 Cuando un usuario ha sido diagnosticado de COVID y ha introducido un código proporcionado por las autoridades sanitarias, la aplicación informará mediante el sistema de notificaciones a los usuarios de la aplicación que están en riesgo de haber sido contagiados. Estas personas serán contactadas por los responsables de la comunidad autónoma en la que se encuentren y se le realizarán las pruebas pertinentes.
 
 ### 2.1 Introducción al Dominio del Problema
-•	La dificultad que genera esta situación de pandemia por la COVID es el no poder controlar los contagios que se generan ya que existen personas asintomáticas, que pueden ser positivos y sin que ellas se den cuenta y contagiar otras personas.
+•	La dificultad que genera esta situación de pandemia por la COVID es el no poder controlar los contagios que se generan ya que existen personas asintomáticas, que pueden ser positivos y sin que ellas se den cuenta y contagiar otras personas.  
 •	El otro gran problema es el control de las personas de contacto con las que ha estado un positivo en los anteriores 7 días.
-•	También hay gente que puede saltarse las cuarentenas impuestas por las autoridades sanitarias con el fin de que el virus no se extienda y a esto se le suma la Ley de Protección de Datos con la que debes garantizar la privacidad e intimidad de las personas entre otras cosas.
+•	También hay gente que puede saltarse las cuarentenas impuestas por las autoridades sanitarias con el fin de que el virus no se extienda y a esto se le suma la Ley de Protección de Datos con la que debes garantizar la privacidad e intimidad de las personas entre otras cosas.  
 •	En un momento de esta pandemia, se realizaron pruebas médicas masivas para poder tener controlado el virus en las zonas que se realizaba a las que las personas no acudían.  
 
 Estos son los problemas que existen en cuanto al COVID, pero tambien existen otros problemas que hay en cuanto a la aplicación.  
 
-•	Las personas cuando sale una aplicación nueva pueden tardar en entenderla, pero nuestro objetivo es hacerla sencilla y clara. Este punto va destinado a las personas mayores que tienen menos funcionalidad con los smartphones y pueden tener problemas para poner en funcionamiento la aplicación.
+•	Las personas cuando sale una aplicación nueva pueden tardar en entenderla, pero nuestro objetivo es hacerla sencilla y clara. Este punto va destinado a las personas mayores que tienen menos funcionalidad con los smartphones y pueden tener problemas para poner en funcionamiento la aplicación.  
 •	Otro de los problemas más relevantes y el de hacer una aplicación que esté funcionando en segundo plano, que no tenga que estar abierta de continuo, y que todo el mundo puede que no tenga acceso a zonas de cobertura para actualizar la información.
 
 El máximo problema que tiene el crear una aplicación en cualquier categoría es que hay que pensar que NO TODAS LAS PERSONAS TIENEN SMARTPHONE.
