@@ -1,3 +1,23 @@
+|1| Fuerzas del orden  |
+|-----------|-----------|
+|Versión| 1.0 (30/11/2020)|
+|Dependencias|Sistema de notificaciones y checkeo del cumplimiento de la cuarentena|                
+|Descripción| Este subsistema es el encargado de checkear el cumplimiento de las cuarentenas y el cumplimiento de las restricciones impuestas por las autoridades competentes. Dicha comprobacion se realiza tras el recibo de notificaciones por parte de los centros de salud los cuales indican el positivo de la persona  |  
+|Importancia| Alta |  
+|Prioridad| Media |
+|Comentarios| Este subsitema se encargara del control de las normas impuestas realizando controles y poniendo multas a las personas las cuales incumplan las normas|
+
+
+|2| Rastreadores  |
+|-----------|-----------|
+|Versión| 1.0 (30/11/2020)|
+|Dependencias|Sistema de notificaciones, Identificar contactos y alertas de usuarios|                
+|Descripción| En este subsistema se llevara a cabo la contratacion de personal cualificado denominado rastreador encargado de realizar el seguimiento de los contagios y contactos directos el cual informara al usuario en caso de contacto con positivo|  
+|Importancia| Media |  
+|Prioridad| Baja |
+|Comentarios| Los rastreadores se contratan con la intencion de controlar posibles personas las cuales no tengan acceso a un dispositivo smartphone |
+
+
 |3| Centos de salud  |
 |-----------|-----------|
 |Versión| 1.0 (30/11/2020)|
