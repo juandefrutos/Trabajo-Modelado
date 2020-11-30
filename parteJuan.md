@@ -7,6 +7,8 @@
 |Prioridad| Media |
 |Comentarios| Este subsitema se encargara del control de las normas impuestas realizando controles y poniendo multas a las personas las cuales incumplan las normas|
 
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/PoliciaArbolCaracteristicas.png)  
+![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/PoliciaFlujo.png)
 
 |2| Rastreadores  |
 |-----------|-----------|
@@ -17,6 +19,8 @@
 |Prioridad| Baja |
 |Comentarios| Los rastreadores se contratan con la intencion de controlar posibles personas las cuales no tengan acceso a un dispositivo smartphone |
 
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/RastreadorArbolCaracteristicas.png)  
+![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/RastreadorFlujo.png)
 
 |3| Centos de salud  |
 |-----------|-----------|
