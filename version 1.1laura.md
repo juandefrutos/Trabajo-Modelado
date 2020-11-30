@@ -79,6 +79,8 @@ Cuando un usuario ha sido diagnosticado de COVID y ha introducido un código pro
 •	El otro gran problema es el control de las personas de contacto con las que ha estado un positivo en los anteriores 7 días.
 •	También hay gente que puede saltarse las cuarentenas impuestas por las autoridades sanitarias con el fin de que el virus no se extienda y a esto se le suma la Ley de Protección de Datos con la que debes garantizar la privacidad e intimidad de las personas entre otras cosas.  
 •	En un momento de esta pandemia, se realizaron pruebas médicas masivas para poder tener controlado el virus en las zonas que se realizaba a las que las personas no acudían.  
+•	Otro de los problemas seria la deteccion de los contactos estfrechos se realiza a traves de bluetooth por lo tanto debe estar activado de forma continua.
+•	El problema mas importante radica en que no es obligatorio el uso de la aplicacion por lo que mucha gente no se ha descargado la aplicación
 
 Estos son los problemas que existen en cuanto al COVID, pero tambien existen otros problemas que hay en cuanto a la aplicación.  
 
@@ -172,14 +174,8 @@ La aplicación de Pandemio también por su parte tiene distintos problemas los c
 |Descripción| Zonas en las que la cobertura no llega de forma correcta y no podemos acceder a los servicios que ofrece Pandemio. |
 |Comentarios| Por ejemplo a zonas rurales en los que la cobertura no llega |  
 
-|3| Viajes y el roaming|
-|---------------|------------|
-|[Versión] |1.3 11/14/2020|
-|Descripción| Una de las cosas que debemos tener en cuenta es que cuando salgamos de viaje la aplicación sobre todo es para la zona de la península así que debemos de tener en cuenta una actualización en el futuro de la compatibilidad de esta aplicación con otras que no sean de nuestro país |
-|Comentarios| Por ejemplo a zonas rurales en los que la cobertura no llega |  
 
-
-|4| Falta de datos|
+|3| Falta de datos|
 |---------------|------------|
 |[Versión] |1.4 14/11/2020|
 |Descripción| Mucha gente solo usa su smartphone con conexión a internet cuando disponen de una red wifi para acceder a servicios en linea por lo que es necesario tener en cuenta a este tipo de personas para el uso diario de la aplicación. |
