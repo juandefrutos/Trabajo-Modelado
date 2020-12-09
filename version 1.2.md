@@ -559,10 +559,11 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios||
 
-### 6.2 Casos de uso del Sistema  
+### 6.2 Casos de uso del Sistema
+En esta sección se representarán los requisitos de usuario mediante los casos de uso
 #### 6.2.1 Diagramas de Casos de Uso del Sistema   
 #### 6.2.2 Especificación de Actores del Sistema  
-#### 6.2.3 Especificación de Casis de Uso del Sistema  
+#### 6.2.3 Especificación de Casos de Uso del Sistema  
 ### 6.3 Requisitos Funcionales del Sistema  
 #### 6.3.1 Requisitos de Información del Sistema  
 #### 6.3.2 Requisitos de Reglas de Negocio del Sistema  
