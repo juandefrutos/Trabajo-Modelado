@@ -1,0 +1,148 @@
+Requisitos de Usuario para los Centros de Salud  
+1. Enviar Datos a las Autonomias
+2. Añadir Usuario a la Lista Pruebas Medicas
+3. Recibir Informacion
+4. Informar Fuerzas del Orden
+5. Uusario Positivo
+6. Informar a Contactos Estrechos
+7. Crear Codigo
+8. Comprobrar Lista Pruebas
+9. Informar Cuarentenas
+10. Asignar Codigo
+11. El centro sanitario podrá verificar la realización del pcr de un usuario
+
+Requisitos de Usuario para las Autonomias  
+1. Recoger Datos
+2. Notificar Ministerio de Sanidad
+3. Realizar Estadistica
+4. Comprobar datos
+5. Enviar Datos y Estadistica
+6. Nuevas normas
+7. Informar Usuarios
+8. Informar Centros de Salud
+
+REQUSITOS DE USUARIO CUERPOS DE SEGURIDAD
+1. como cuerpos de seguridad, necesito obtener una lista de usuarios que deben hacerse el pcr
+2. Como cuerpos de seguridad, necesito obtener una lista de usuarios que deben hacer cuarentena
+REQUSIITOS DE USUARIO CIUDADANO
+1. El usuario podrá verificar la realización de su pcr
+2. Al recibir la notificación del deber de realizarse el pcr con fecha, dia y lugar, el usuario confirmará su asistencia para ese dia y hora, de lo contrario se le asignará otra fecha y/o hora.
+
+REQUSITOS DE USUARIO MINISTERIO
+1. El ministerio realizará estadisticas con los datos recibidos
+2. El ministerio notificará modificación de restricciones según datos recogidos
+REQUISITOS DE USUARIO RASTREADORES
+1. El rastreador podrá enviar notificación al usuario de identificación de un cintacto estrecho
+
+
+Requisitos Funcionales Centros de Salud  
+1. El sistema enviara un codigo al usuario cuando sea positivo
+2. El sistema informara al usuario de la prueba medica
+3. El sistema informara a las fuerzas del orden de la no presencia del usuario convocado para 
+la prueba medica
+4. El sistema permitira el registro de todos los usuarios
+5. El sistema permitira enviar notificaciones a las fuerzas del orden
+6. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las 
+fuerzas del orden
+7. El sistema permitira introdrucir usuarios a lista de pruebas medicas
+8. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
+9. El sistema enviara una notificacion a los usuarios positivos
+10. El sistema enviara una notificacion a los contactos estrechos de un usuario positivo
+11. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
+12. El sistema tendra acceso al checkeo de las comprobacion de cuarentenas
+13. El sistema creara codigos aleatorios y unicos
+14. El sistema se comunicara con las autonomias
+15. El sistema recogera informacion de diferentes actores
+16. El sistema enviara datos a las autonomias
+17. El sistema 
+7. El sistema debe eliminar de la lista de personas pendientes de pcr a los usuarios que se realicen el test
+
+Requisitos Funcionales Autonomias
+
+1. El sistema se comunicara con el Ministerio de Sanidad
+2. El sistema se comunicara con los centros de la salud respectivos
+3. El sistema recogera todos los resultados de los usuarios
+4. El sistema creara una estadistica con los datos recogidos
+5. El sistema evaluara las estadistica, con el fin de edurecer las restricciones o ablandarlas
+6. El sistema enviara los datos y estadisticas realizadas
+7. El sistema informara a los usuarios de las nuevas normas
+8. EL sistema informara a los centros de salud de las nuevas normas
+9. El sistema deberá guardar datos para estadísticas
+
+REQUISITOS FUNCIONALES CUERPOS DE SEGURIDAD
+1. El sistema deberá permitir mostrar la información de los usuarios que deben realizarse la pcr
+2. El sistema deberá permitir mostrar la información de los usuarios en cuarentena
+3. El sistema deberá permitir consultar usuarios según fecha de pcr
+4. El sistema deberá permitir consultar usuarios según fecha de cuarentena
+5. El sistema deberá generar un informe de los usuarios en cuarentena
+6. El sistema deberá generar un informe de los usuarios que deben hacerse el pcr, mostrando nombre, dirección, dni
+7. El sistema debe eliminar de la lista de personas pendientes de pcr a los usuarios que se realicen el test
+8. El sistema debe eliminar de la lista de personas en cuarentena a los usuarios que hayan cumplido la misma
+9. El sistema debe permitir búsquedas por usuarios en la base de datos mostrando su nombre, apellidos, dni, dirección
+
+REQUISITOS FUNCIONALES RASTREADORES
+
+REQUISITOS FUNCIONALES MINISTERIO
+1. El sistema debe recoger los datos proporcionados por las autonomías
+2. El sistema debe generar estadísticas con los datos proporcionados por las autonomías
+3. El sistema informrá de las restricciones a cada autonomía
+
+REQUISITOS FUNCIONALES CIUDADANO
+1. El sistema deberá proporcionar un formulario de logeo
+	¿req no funcional?
+	1.2. El sistema deberá permitir 3 intentos para hacer el login
+2. El sistema debe permitir registrar usuarios
+	¿req no funcional?
+	2.1. EL sistema debe almacenar los usuarios
+	2.2. El sistema no debe permitir introducir caracteres que no sean alfabéticos en el nombre
+	2.3. El sistema debe permitir modificar sus datos a un usuario (cambio de dirección, de tlf)
+	2.4 El sistema debe limitar el número de 8 dígitos en el campos del DNI del registro de usuarios
+3. El sistema no debe permitir introducir datos nulos en los registros de clientes
+4. ¿El sistema deberá generar un código por cada cliente que se registre?
+5. El sistema deberá generar un código por cada usuario que debe realizarse la pcr
+6. El sistema deberá generar un código por cada usuario positivo en covid
+7.
+REQUISITOS NO FUNCIONALES
+*FIABILIDAD*
+1. El sistema ha de garantizar que la información personal de los usuarios sólo será accesible mediante autorización explícita
+*EFICIENCIA*
+1. El sistema debe ser capaz de procesar 3 transacciones por segundo
+2. Toda transacción debe responder al usuario en menos de 3s
+3. El sistema debe soportar 20millones de conexiones simultáneas
+*SEGURIDAD*
+1. Los permisos de acceso al sistema podrán ser cambiados solamente por los administradores de BD
+2. El sistema a desarrollar debe de hacerlo siguiendo patrones de programación que incrementen la seguridad de los datos.
+3. El sistema debe hacer un backup cada 24 horas.
+*USABILIDAD*
+1. El tiempo de aprendizaje del sistema por parte del usuario debe ser inferior a 2 horas.
+2. El sistema debe contar con manuales de usuario y ayuda online.
+3. El sistema proporcionará mensajes de error claros y concisos.
+*DEPENDIBILIDAD*
+1. El sistema debe tener una disponibilidad de al menos el 99,99% de las veces que el usuario quiera acceder.
+2. El tiempo de inicio o reinicio del sistema debe ser menor a 1 min.
+3. La probabilidad de fallo del sistema será inferior al 5%.
+*OTROS*
+1. El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos (legislativo (impuesto); seguridad y salud).
+2. El nuevo sistema se acogerá a las GNU (leyes generales públicas), será gratuito, de código abierto, sin patentes (regulatorio (optativo)).
+3. Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes (ético, legislativo).
+*ATRIBUTOS DE CALIDAD*
+1. El sw debe responder con rapidez a las pulsaciones en la pantalla táctil
+2. El mecanismo de verificación de pcr/ verificación de cuarentena debe ser lo suficientemente fácil como para que los usuarios no deban emplear mucho tiempo para realizarlo
+3. El sistema solicitará la autenticación del usuario mediante un par (usuario, contraseña) en que la contraseña se enviará cifrada en MD5.
+*REQUISITOS DE INTERFACES EXTERNAS*
+(conexiones con sistemas externos)
+*RESTRICCIONES*
+1. El navegador debe utilizar protocolos crptográficos de 256bits para asegurar las transacciones
+2. La longitud minima de la contraseña debe ser 8 caracteres, y debe contener letras y numeros
+*REQUISITOS DE INFORMACIÓN(DATOS)*
+1. El código tiene 5 dígitos
+2. Una notificación de incidencia contiene el nombre, apellidos, dirección, dni y numero de telefono del usuario
+
+REGLAS DE NEGOCIO: las reglas que nos impone el ministerio
+1. El sistema debe soportar el manejo de grandes volúmenes de información
+2. El sistema se desarrollará en java
+3. El motor de la base de datos donde se almacenará toda la información será MySQL
+5. El sistema contará con un menu de barra para que se pueda identificar donde se elaboran procesos como notificación de incumplimiento, etc
+5. El sistema localizará los contactos estrechos mediante GPS
+6. El sistema dbe satisfacer las normativas para protección de datos
+7. Solo las comunidades y ministerio tienen acceso a los datos para procesarlos y obtener estadísticas
