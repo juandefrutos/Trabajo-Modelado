@@ -54,6 +54,9 @@ Para ello no solo hará falta la creación de esta plataforma de rastreo si no t
 El objetivo es mejorar la aplicación existente Radar Covid ya que, no ha dado los resultados esperados. Se necesita obtener más información de los ciudadanos y gestionar toda la infprmación de manera optima.
 
 ### 1.1 Alcance
+El sistema Pandemio es un sistema de control de la pandemia que unificará el acceso a la información de los usuarios para centros sanitarios, cuerpos de seguridad, comunidad autónoma, ministerio y rastreadores que necesiten verificar y controlar esta información. El sistema almacenará la localización y datos de los usuarios, así como la obligación de realizarse el pcr y la obligación de cumplir cuarentena.
+Este sistema facilitará que el estado español reduzca la cantidad de contagios, ya que permitirá a los centros sanitarios y cuerpos de seguridad el control de pcr y cuarentena. Gracias a este control se podrán realizar estadísticas sobre cada comunidad autónoma para después obtener estadísticas para todo el territorio nacional. A diferencia de Radar covid, utilizado actualmente, nuestro producto identificará a los usuarios con sus datos personales cumpliendo con la legislación vigente de protección de datos.
+
 Se pretende que la plataforma pueda llegar a toda la población española ya sean jóvenes o ancianos, por ello será multiplataforma y de fácil uso, para todos ellos que no estén familiarizados con las nuevas tecnologías.  
 
 En principio, la aplicación se desarrollará para los sistemas operativo Android e iOS con vistas a ser ampliado en otros sistema.
@@ -559,24 +562,148 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios||
 
-### 6.2 Casos de uso del Sistema
-En esta sección se representarán los requisitos de usuario mediante los casos de uso
-#### 6.2.1 Diagramas de Casos de Uso del Sistema   
-#### 6.2.2 Especificación de Actores del Sistema  
-#### 6.2.3 Especificación de Casos de Uso del Sistema  
-### 6.3 Requisitos Funcionales del Sistema  
-#### 6.3.1 Requisitos de Información del Sistema  
-#### 6.3.2 Requisitos de Reglas de Negocio del Sistema  
-#### 6.3.3 Requisitos de Conducta del Sistema  
-### 6.4 Requisitos No Funcionales del Sistema  
-#### 6.4.1 Requisitos de Fiabilidad  
-#### 6.4.2 Requisitos de Usabilidad  
-#### 6.4.3 Requisitos de Eficiencia  
-#### 6.4.4  Requisitos de Mantenibilidad  
-#### 6.4.5 Requisitos de Portabilidad  
-#### 6.4.6 Requisitos de Seguridad  
-#### 6.4.7 Otros Requisitos No Funcionales  
-### 6.5 Restricciones Técnicas del Sistema  
-### 6.6 Requisitos de Integración del Sistema  
-### 6.7 Información Sobre Trazabilidad  
-    
+### 6.2 Casos de uso y Requisitos Subsistema Usuarios
+#### 6.2.1 Casos de uso del Subsistema Usuarios
+##### 1 Diagramas de Casos de Uso  
+##### 2 Especificación de Actores 
+##### 3 Especificación de Casos de Uso 
+#### 6.2.2 Requisitos Funcionales del Subsistema Usuarios  
+##### 1 Requisitos de Información   
+##### 2 Requisitos de Reglas de Negocio  
+##### 3 Requisitos de Conducta 
+#### 6.2.3 Requisitos No Funcionales del Subsistema Usuarios
+##### 1 Requisitos de Fiabilidad  
+##### 2 Requisitos de Usabilidad  
+##### 3 Requisitos de Eficiencia
+##### 4 Requisitos de Mantenibilidad  
+##### 5 Requisitos de Portabilidad
+##### 6 Requisitos de Seguridad
+##### 7 Otros Requisitos No Funcionales
+
+### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
+#### 6.3.1 Casos de uso del Subsistema Ministerio de Sanidad
+##### 1 Diagramas de Casos de Uso  
+##### 2 Especificación de Actores 
+##### 3 Especificación de Casos de Uso
+
+|1 | Realizar estadísticas|
+|---------------|------------|
+|Versión| 1.0 (14/12/2020)|
+|Dependencias| |
+|Precondición| Procesar los datos recibidos|
+|Descripción| |
+|Secuencia Normal| Paso| Acción|
+                 |-----|-------|
+                 |1||
+|Postcondición||
+|Excepciones| Paso| Acción|
+                 |-----|-------|
+                 |1||
+|Importancia| Alta|
+|Prioridad| Alta|
+|Estado| Aprobado|
+|Comentarios||
+
+|2 | Enviar restricciones|
+|---------------|------------|
+|Versión| 1.0 (14/12/2020)|
+|Dependencias||
+|Precondición||
+|Descripción||
+|Postcondición||
+|Importancia| Alta|
+|Prioridad| Alta|
+|Estado| Aprobado|
+|Comentarios||
+
+#### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad  
+##### 1 Requisitos de Información   
+##### 2 Requisitos de Reglas de Negocio  
+##### 3 Requisitos de Conducta 
+#### 6.3.3 Requisitos No Funcionales del Subsistema Ministerio de Sanidad
+##### 1 Requisitos de Fiabilidad  
+##### 2 Requisitos de Usabilidad  
+##### 3 Requisitos de Eficiencia
+##### 4 Requisitos de Mantenibilidad  
+##### 5 Requisitos de Portabilidad
+##### 6 Requisitos de Seguridad
+##### 7 Otros Requisitos No Funcionales
+
+### 6.4 Casos de uso y Requisitos Subsistema Centros de Salud
+#### 6.4.1 Casos de uso del Subsitema Centros de Salud
+##### 1 Diagramas de Casos de Uso  
+##### 2 Especificación de Actores 
+##### 3 Especificación de Casos de Uso 
+#### 6.4.2 Requisitos Funcionales del Subsitema Centros de Salud 
+##### 1 Requisitos de Información   
+##### 2 Requisitos de Reglas de Negocio  
+#### 3 Requisitos de Conducta 
+#### 6.4.3 Requisitos No Funcionales del Subsitema Centros de Salud
+##### 1 Requisitos de Fiabilidad  
+##### 2 Requisitos de Usabilidad  
+##### 3 Requisitos de Eficiencia
+##### 4 Requisitos de Mantenibilidad  
+##### 5 Requisitos de Portabilidad
+##### 6 Requisitos de Seguridad
+##### 7 Otros Requisitos No Funcionales
+
+### 6.5 Casos de uso y Requisitos Subsistema Autonomias
+#### 6.5.1 Casos de uso del Subsitema Autonomias
+##### 1 Diagramas de Casos de Uso  
+##### 2 Especificación de Actores 
+##### 3 Especificación de Casos de Uso 
+#### 6.5.2 Requisitos Funcionales del Subsitema Autonomias  
+##### 1 Requisitos de Información   
+##### 2 Requisitos de Reglas de Negocio  
+##### 3 Requisitos de Conducta 
+#### 6.5.3 Requisitos No Funcionales del Subsitema Autonomias
+##### 1 Requisitos de Fiabilidad  
+##### 2 Requisitos de Usabilidad  
+##### 3 Requisitos de Eficiencia
+##### 4 Requisitos de Mantenibilidad  
+##### 5 Requisitos de Portabilidad
+##### 6 Requisitos de Seguridad
+##### 7 Otros Requisitos No Funcionales
+
+### 6.6 Casos de uso y Requisitos Subsistema Rastreadores
+#### 6.6.1 Casos de uso del Subsitema Rastreadores
+##### 1 Diagramas de Casos de Uso  
+##### 2 Especificación de Actores 
+##### 3 Especificación de Casos de Uso 
+#### 6.6.2 Requisitos Funcionales del Subsitema Rastreadores  
+##### 1 Requisitos de Información   
+##### 2 Requisitos de Reglas de Negocio  
+##### 3 Requisitos de Conducta 
+#### 6.6.3 Requisitos No Funcionales del Subsitema Rastreadores
+##### 1 Requisitos de Fiabilidad  
+##### 2 Requisitos de Usabilidad  
+##### 3 Requisitos de Eficiencia
+##### 4 Requisitos de Mantenibilidad  
+##### 5 Requisitos de Portabilidad
+##### 6 Requisitos de Seguridad
+##### 7 Otros Requisitos No Funcionales
+
+### 6.7 Casos de uso y Requisitos Subsistema Fuerzas del Orden
+#### 6.7.1 Casos de uso del Subsitema Fuerzas del Orden
+##### 1 Diagramas de Casos de Uso  
+##### 2 Especificación de Actores 
+##### 3 Especificación de Casos de Uso 
+#### 6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden  
+##### 1 Requisitos de Información   
+##### 2 Requisitos de Reglas de Negocio  
+##### 3 Requisitos de Conducta 
+#### 6.7.3 Requisitos No Funcionales del Subsitema Fuerzas del Orden
+##### 1 Requisitos de Fiabilidad  
+##### 2 Requisitos de Usabilidad  
+##### 3 Requisitos de Eficiencia
+##### 4 Requisitos de Mantenibilidad  
+##### 5 Requisitos de Portabilidad
+##### 6 Requisitos de Seguridad
+##### 7 Otros Requisitos No Funcionales
+
+### 6.8 Restricciones Técnicas del Sistema
+### 6.9 Requisitos de Integración del Sistema
+### 6.10 Información Sobre Trazabilidad
+
+
+
