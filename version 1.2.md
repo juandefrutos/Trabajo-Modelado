@@ -581,6 +581,11 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 ##### 7 Otros Requisitos No Funcionales
 
 ### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
+
+**RU1**: El ministerio de sanidad recibirá datos de cada autonomía
+**RU3**: El ministerio realizará estadísticas con los datos procesados
+**RU4**: El ministerio notificará al territorio español la modificación de restricciones según los resultados de las estadísticas
+
 #### 6.3.1 Casos de uso del Subsistema Ministerio de Sanidad
 ##### 1 Diagramas de Casos de Uso  
 ##### 2 Especificación de Actores 
@@ -589,16 +594,12 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |1 | Realizar estadísticas|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
-|Dependencias| |
-|Precondición| Procesar los datos recibidos|
-|Descripción| |
-|Secuencia Normal| Paso| Acción|
-                 |-----|-------|
-                 |1||
-|Postcondición||
-|Excepciones| Paso| Acción|
-                 |-----|-------|
-                 |1||
+|Dependencias| • Sistema de control de cuarentena|
+|Precondición| Recibir y procesar los datos recogidos por las autonomias|
+|Descripción| El ministerio realizará estadisticas sobre el covid para todo el estado español para modificar las restricciones|
+|Secuencia Normal| p1. Acceder pandemio p2. Solicitar datos a las autonomías p3. Guardar datos recibidos |
+|Postcondición| Tomar decisiones en base a esos resultados|
+|Excepciones| p1. |
 |Importancia| Alta|
 |Prioridad| Alta|
 |Estado| Aprobado|
@@ -607,16 +608,24 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |2 | Enviar restricciones|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
-|Dependencias||
-|Precondición||
-|Descripción||
-|Postcondición||
+|Dependencias| • Sistema de creación de estadísticas|
+|Precondición| Realizar estadísticas|
+|Descripción| El ministerio modificará las restricciones de la población según los resultados de las estadísticas|
+|Secuencia Normal| p1. Acceder pandemio p2. Enviar estadísticas p3. Notificar restricciones |
+|Postcondición| Cambio de restricciones|
+|Excepciones| p1. |
 |Importancia| Alta|
 |Prioridad| Alta|
 |Estado| Aprobado|
 |Comentarios||
 
-#### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad  
+#### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad
+
+**RF1**: El sistema debe almacenar los datos recogidos por las autonomías
+**RF2**: El sistema debe enviar los datos recogidos por las autonomías
+**RF3**: El sistema debe almacenar ls estadísiticas realizadas por el ministerio
+**RF4**: El sistema debe notificar el cambio de restricciones a todos los usuarios
+
 ##### 1 Requisitos de Información   
 ##### 2 Requisitos de Reglas de Negocio  
 ##### 3 Requisitos de Conducta 
