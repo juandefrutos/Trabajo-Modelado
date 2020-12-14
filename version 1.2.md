@@ -835,22 +835,62 @@ Requisitos de Usuario para las Autonomias
 ### 6.6 Casos de uso y Requisitos Subsistema Rastreadores
 #### 6.6.1 Casos de uso del Subsitema Rastreadores
 ##### 1 Diagramas de Casos de Uso   
+![Caso de Uso Rastreadores](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/RastreadorCasoDeUso.png)
 ##### 2 Especificación de Casos de Uso 
+
+equisitos de Usuario para los Rastreadores
+1. El rastreador podrá enviar notificación al usuario de identificación de un contacto estrecho
+2. El rastreador recibirá alerta por usuario positivo
 #### 6.6.2 Requisitos Funcionales del Subsitema Rastreadores  
 
+1. El sistema mostrá una lista de personas que han dado positivo
+2. El sistema enviará notificación de contacto estrecho
 ### 6.7 Casos de uso y Requisitos Subsistema Fuerzas del Orden
 #### 6.7.1 Casos de uso del Subsitema Fuerzas del Orden
 ##### 1 Diagramas de Casos de Uso  
+![Caso de Uso Fuerzas del Orden](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/PoliciaCasodeUso.png)
 ##### 2 Especificación de Casos de Uso 
-#### 6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden    
+
+Requisitos de Usuario para las Fuerzas del Orden
+1. Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
+2. los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usario
+4. los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
+5. los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
+#### 6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden   
+
+1. El sistema mostrará una lista de personas que deben hacer cuarentena
+2. El sistema mostrará una lista de personas que no han acudido a la pcr
+3. El sistema notificará al centro de salud el estado de la cuarentena
+4. El sistema notificará al usuario el no acudir a la pcr
+5. El sistema mostrá la normativa impuesta 
 #### 6.7.3 Requisitos No Funcionales para todo el sistema
-##### 1 Requisitos de Fiabilidad  
-##### 2 Requisitos de Usabilidad  
+##### 1 Requisitos de Fiabilidad 
+1. El sistema ha de garantizar que la información personal de los usuarios sólo será accesible mediante autorización explícita 
+##### 2 Requisitos de Usabilidad 
+1. El tiempo de aprendizaje del sistema por parte del usuario debe ser inferior a 2 horas.
+2. El sistema debe contar con manuales de usuario y ayuda online.
+3. El sistema proporcionará mensajes de error claros y concisos.
+4. El sistema contará con un menu de barra para que se pueda identificar donde se elaboran procesos como notificación de incumplimiento, etc
 ##### 3 Requisitos de Eficiencia
+1. El sistema debe ser capaz de procesar 3 transacciones por segundo
+2. Toda transacción debe responder al usuario en menos de 3s
+3. El sistema debe soportar 20millones de conexiones simultáneas
 ##### 4 Requisitos de Mantenibilidad  
 ##### 5 Requisitos de Portabilidad
 ##### 6 Requisitos de Seguridad
-##### 7 Otros Requisitos No Funcionales
+1. Los permisos de acceso al sistema podrán ser cambiados solamente por los administradores de BD
+2. El sistema a desarrollar debe de hacerlo siguiendo patrones de programación que incrementen la seguridad de los datos.
+3. El sistema debe hacer un backup cada 24 horas.
+##### 7 Requisitos de Dependibilidad
+1. El sistema debe tener una disponibilidad de al menos el 99,99% de las veces que el usuario quiera acceder.
+2. El tiempo de inicio o reinicio del sistema debe ser menor a 1 min.
+3. La probabilidad de fallo del sistema será inferior al 5%.
+##### 8 Otros Requisitos No Funcionales
+1. El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos (legislativo (impuesto); seguridad y salud).
+2. El nuevo sistema se acogerá a las GNU (leyes generales públicas), será gratuito, de código abierto, sin patentes (regulatorio (optativo)).
+3. Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes (ético, legislativo).
+4. El sistema se desarrollará en java debido a no obligatoriedad por parte del ministerio
+5. El motor de la base de datos donde se almacenará toda la información será MySQL
 ### 6.8 Restricciones Técnicas del Sistema
 
 Las principales barreras en el uso de nuestra aplicación son sobre todo las zonas menos desarrolladas tecnologicamente. En este apartado vamos a ver todos los problemas que podemos tener como zonas muertas de cobertura, dispositivos moviles antiguos (que no sean smartphones) y dispositivos smartphones desactualizados. 
