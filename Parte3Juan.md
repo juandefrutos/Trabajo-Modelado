@@ -18,10 +18,9 @@ Requisitos de Usuario para los Centros de Salud
 4. Informar Fuerzas del Orden
 5. Uusario Positivo
 6. Informar a Contactos Estrechos
-7. Crear Codigo
+7. Asignar Codigo
 8. Comprobrar Lista Pruebas
 9. Informar Cuarentenas
-10. Asignar Codigo
 
 Requisitos de Usuario para las Autonomias  
 1. Recoger Datos
@@ -51,7 +50,27 @@ Requisitos Funcionales Centros de Salud
 14. El sistema se comunicara con las autonomias
 15. El sistema recogera informacion de diferentes actores
 16. El sistema enviara datos a las autonomias
-17. El sistema 
+
+|1| El sistema enviara un codigo al usuario cuando sea positivo|
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Sistema de control de PCR|
+|Descripción| El sistema debe enviar un codigo cuando un usuario es positivo, para tener localizado al usuarios con ese codigo unico|
+|Importancia| Alta|
+|Prioridad| Alta |
+|Estado| Aprobado|
+|Comentarios| Este codigo sera unico y se generara de forma automatia|
+
+|2| El sistema informara al usuario de la prueba medica |
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias|Sistema de control de PCR,Sistema de identificacion de posibles contagios,sistema de localizacion,sistema de notificaciones|
+|Descripción|Se debera informar al usuario de que debera acudir al centro de salud a realizarse la PCR.|
+|Importancia| Alta|
+|Prioridad| Alta |
+|Estado| Aprobado|
+|Comentarios|Solo se le informar, pero el usuario podra acudir o no.|
+
 
 Requisitos Funcionales Autonomias
 
@@ -109,7 +128,7 @@ Requisitos Funcionales Autonomias
 |Estado| Aprobado |
 |Comentarios|El Gobierno cambiara la Ley de Proteccion de Datos a nuestra disposicion |
 
-|5|El sistema no permite usuarios duplicados ni eliminacion de usuarios|
+|5|El sistema no permite usuarios duplicados y eliminacion de usuarios|
 |---------------|------------|
 |[Versión] |1.0 15/12/2020| 
 |Dependencias| Todo el sistema |
