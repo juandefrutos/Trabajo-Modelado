@@ -21,9 +21,28 @@ Requisitos de Usuario para las Autonomias
 7. Informar Usuarios
 8. Informar Centros de Salud
 
+
 REQUSITOS DE USUARIO CUERPOS DE SEGURIDAD
-1. como cuerpos de seguridad, necesito obtener una lista de usuarios que deben hacerse el pcr
-2. Como cuerpos de seguridad, necesito obtener una lista de usuarios que deben hacer cuarentena
+1. Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
+2. los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usario
+4. los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
+5. los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
+
+REQUISITOS FUNCIONALES DE CUERPOS DE SEGURIDAD
+1. El sistema mostrará una lista de personas que deben hacer cuarentena
+2. El sistema mostrará una lista de personas que no han acudido a la pcr
+3. El sistema notificará al centro de salud el estado de la cuarentena
+4. El sistema notificará al usuario el no acudir a la pcr
+5. El sistema mostrá la normativa impuesta 
+
+REQUISITOS DE USUARIO RASTREADORES
+1. El rastreador podrá enviar notificación al usuario de identificación de un contacto estrecho
+2. El rastreador recibirá alerta por usuario positivo
+
+REQUISITOS FUNCIONALES DE RASTREADORES
+1. El sistema mostrá una lista de personas que han dado positivo
+2. El sistema enviará notificación de contacto estrecho
+
 REQUSIITOS DE USUARIO CIUDADANO
 1. El usuario podrá verificar la realización de su pcr
 2. Al recibir la notificación del deber de realizarse el pcr con fecha, dia y lugar, el usuario confirmará su asistencia para ese dia y hora, de lo contrario se le asignará otra fecha y/o hora.
@@ -31,9 +50,6 @@ REQUSIITOS DE USUARIO CIUDADANO
 REQUSITOS DE USUARIO MINISTERIO
 1. El ministerio realizará estadisticas con los datos recibidos
 2. El ministerio notificará modificación de restricciones según datos recogidos
-REQUISITOS DE USUARIO RASTREADORES
-1. El rastreador podrá enviar notificación al usuario de identificación de un cintacto estrecho
-
 
 Requisitos Funcionales Centros de Salud  
 1. El sistema enviara un codigo al usuario cuando sea positivo
@@ -81,26 +97,21 @@ REQUISITOS FUNCIONALES CUERPOS DE SEGURIDAD
 9. El sistema debe permitir búsquedas por usuarios en la base de datos mostrando su nombre, apellidos, dni, dirección
 
 REQUISITOS FUNCIONALES RASTREADORES
+1. El sistema deberá mostrar los contactos estrechos de un usuario positivo
 
-REQUISITOS FUNCIONALES MINISTERIO
-1. El sistema debe recoger los datos proporcionados por las autonomías
-2. El sistema debe generar estadísticas con los datos proporcionados por las autonomías
-3. El sistema informrá de las restricciones a cada autonomía
-
-REQUISITOS FUNCIONALES CIUDADANO
+REQUISITOS FUNCIONALES Y NF CIUDADANO
 1. El sistema deberá proporcionar un formulario de logeo
-	¿req no funcional?
-	1.2. El sistema deberá permitir 3 intentos para hacer el login
+	1.2. El sistema deberá permitir 3 intentos para hacer el login - RNF
 2. El sistema debe permitir registrar usuarios
 	¿req no funcional?
-	2.1. EL sistema debe almacenar los usuarios
-	2.2. El sistema no debe permitir introducir caracteres que no sean alfabéticos en el nombre
-	2.3. El sistema debe permitir modificar sus datos a un usuario (cambio de dirección, de tlf)
-	2.4 El sistema debe limitar el número de 8 dígitos en el campos del DNI del registro de usuarios
-3. El sistema no debe permitir introducir datos nulos en los registros de clientes
+	2.1. EL sistema debe almacenar los usuarios - RF
+	2.2. El sistema no debe permitir introducir caracteres que no sean alfabéticos en el nombre - RNF
+	2.3. El sistema debe permitir modificar sus datos a un usuario (cambio de dirección, de tlf) - RF
+	2.4 El sistema debe limitar el número de 8 dígitos en el campos del DNI del registro de usuarios - RNF
+3. El sistema no debe permitir introducir datos nulos en los registros de clientes - RNF
 4. ¿El sistema deberá generar un código por cada cliente que se registre?
-5. El sistema deberá generar un código por cada usuario que debe realizarse la pcr
-6. El sistema deberá generar un código por cada usuario positivo en covid
+5. El sistema deberá generar un código por cada usuario que debe realizarse la pcr - RF
+6. El sistema deberá generar un código por cada usuario positivo en covid - RF
 7.
 REQUISITOS NO FUNCIONALES
 *FIABILIDAD*
@@ -117,6 +128,7 @@ REQUISITOS NO FUNCIONALES
 1. El tiempo de aprendizaje del sistema por parte del usuario debe ser inferior a 2 horas.
 2. El sistema debe contar con manuales de usuario y ayuda online.
 3. El sistema proporcionará mensajes de error claros y concisos.
+4. El sistema contará con un menu de barra para que se pueda identificar donde se elaboran procesos como notificación de incumplimiento, etc
 *DEPENDIBILIDAD*
 1. El sistema debe tener una disponibilidad de al menos el 99,99% de las veces que el usuario quiera acceder.
 2. El tiempo de inicio o reinicio del sistema debe ser menor a 1 min.
@@ -125,6 +137,8 @@ REQUISITOS NO FUNCIONALES
 1. El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos (legislativo (impuesto); seguridad y salud).
 2. El nuevo sistema se acogerá a las GNU (leyes generales públicas), será gratuito, de código abierto, sin patentes (regulatorio (optativo)).
 3. Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes (ético, legislativo).
+4. El sistema se desarrollará en java debido a no obligatoriedad por parte del ministerio
+5. El motor de la base de datos donde se almacenará toda la información será MySQL
 *ATRIBUTOS DE CALIDAD*
 1. El sw debe responder con rapidez a las pulsaciones en la pantalla táctil
 2. El mecanismo de verificación de pcr/ verificación de cuarentena debe ser lo suficientemente fácil como para que los usuarios no deban emplear mucho tiempo para realizarlo
@@ -134,15 +148,21 @@ REQUISITOS NO FUNCIONALES
 *RESTRICCIONES*
 1. El navegador debe utilizar protocolos crptográficos de 256bits para asegurar las transacciones
 2. La longitud minima de la contraseña debe ser 8 caracteres, y debe contener letras y numeros
+3. El sistema localizará los contactos estrechos mediante una laternativa al bluetooth (GPS)
 *REQUISITOS DE INFORMACIÓN(DATOS)*
 1. El código tiene 5 dígitos
 2. Una notificación de incidencia contiene el nombre, apellidos, dirección, dni y numero de telefono del usuario
+*SUPUESTOS*
+1. La aplicación será descargada por toda la población
+2. Suponemos que todos los usuarios tienen activado el GPS
+3. Suponemos que todos los usuasrios tienen acceso a internet
 
 REGLAS DE NEGOCIO: las reglas que nos impone el ministerio
 1. El sistema debe soportar el manejo de grandes volúmenes de información
-2. El sistema se desarrollará en java
-3. El motor de la base de datos donde se almacenará toda la información será MySQL
-5. El sistema contará con un menu de barra para que se pueda identificar donde se elaboran procesos como notificación de incumplimiento, etc
-5. El sistema localizará los contactos estrechos mediante GPS
-6. El sistema dbe satisfacer las normativas para protección de datos
-7. Solo las comunidades y ministerio tienen acceso a los datos para procesarlos y obtener estadísticas
+2. El sistema dbe satisfacer las normativas para protección de datos
+3. Solo las comunidades y ministerio tienen acceso a los datos para procesarlos y obtener estadísticas
+
+EXCEPCIONES
+1. pérdida de conectividad de red
+2. caída de la base de datos
+3. fallo de un dispositivo hw
