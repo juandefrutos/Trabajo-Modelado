@@ -1,4 +1,4 @@
-Requisitos de usuario para Usuario
+Requisitos de usuario 
 1. El usuario recibe una notificacion de pcr
 2. El usuario podrá Registrarse
 3. El usuario recibirá Notificaciones de contacto cercano

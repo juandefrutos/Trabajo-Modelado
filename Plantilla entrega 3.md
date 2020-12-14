@@ -534,7 +534,84 @@ el nível de riesgo que tiene, también facilita su localización
 ##### 1 Diagramas de Casos de Uso
 ![Caso de Uso Usuarios](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/caso%20uso%20usuario.png)    
 ##### 2 Especificación de Casos de Uso 
+| 1	| Registrarse |
+|---------------|------------|
+|Versión|	1.0 (12/12/2020)|
+|Dependencias| Sistema de registro de usuario |
+|Precondición| Descargar aplicación pandemio en su smartphone  |
+|Descripción| El usuario al descargar la aplicación deberá realizar un formulario para garantizar la seguridad en su apliacion |
+|Secuencia normal| 1. El usuario deberá descargar la aplicación. 2. El usuario deberá introducir su correo y contraseña para crear una cuenta nueva. 3. El usuario deberá introducir su nombre y su dni |
+|Postcondicion| Utilización de la app de forma efectiva |
+|Excepciones| 1.El sistema no responde. 2.El acceso a internet está desctivado. 3.L ubicación GPS está desactivada |
+|[Importancia]|  Alta |
+|[Prioridad]| Alta  |  
+|[Estado]| Aprobado  |
+
+| 2	| Notificar contacto cercano |
+|---------------|------------|
+|Versión|	1.0 (12/12/2020)|
+|Dependencias| Sistema de notificaciones |
+|Precondición| El usuario debe de haber estado en contacto con una persona positiva en covid 19. |
+|Descripción| El usuario recibe una notificación indicando de que alguien de su entorno es positivo en covid 19.|
+|Secuencia normal| 1. El usuario debe de salir de casa con los datos y ubicación activados, 2. El usuario recibe la notificación de que un contacto se ha realizado una pcr y ha dado positivo. 3.El usuario deberá guardad una cuarentena  |
+|Postcondicion| Permanecer en cuarentena y pedir cita para realización de pcr |
+|Excepciones|  |
+|[Importancia]|  Alta |
+|[Prioridad]| Alta  |  
+|[Estado]| Aprobado  |
+
+Requisitos de usuario 
+1. El usuario recibe una notificacion de pcr
+2. El usuario podrá Registrarse
+3. El usuario recibirá Notificaciones de contacto cercano
+4. El usuario recibira Recibir Alertas 
+5. El usuario Recibira cita Prueba Medica
+6. El usuario recibirá Notificaciones de Restricciones
+7. El usuario Recibira el codigo una vez realizada la pcr y si esta es positiva
+8. El usuario recibira el Resultado de la prueba Medica
+9. El usuario puede Activar GPS 
+10. El usuario puede Desactivar GPS
+11. El usuario recibirá Actualizaciones de la Aplicacion
+12. El usuario puede Activar Datos del Movil
+13. El usuario puede Desactivar Datos del Movil
+14. El usuario podrá confirmar cita pcr
+15. El usuario podra rechazar cita medica
+
 #### 6.2.2 Requisitos Funcionales del Subsitema Usuarios  
+Requisitos funcionales:
+1. El sistema mostrará un formulario de registro para el usuario
+2. El sistema informara si un contacto cercano es positivo
+3. El sistema permitirá introducir un codigo de positivo al usuario
+4. El sistema permitira activar y desactivar los datos moviles
+5. El sistema permitira actualizar la aplicacion
+6. El sistema permitira recibir notificaciones de citas medias
+7. El sistema permitira recibir resultado de PCR
+8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
+9. El sistema recibirá si hay un incumplimiento de cuarentena
+10. El sistema permitira confirmar o no la cita medica
+11. El sistema permitira activar y desactivar el GPS
+12. El sistema permitira recibir actualizaciones de restricciones
+
+
+| 1	| El sistema mostrará un formulario de registro para el usuario |
+|---------------|------------|
+|Versión|	1.0 (14/12/2020)|
+|Dependencias| Sistema de registro para el usuario  |
+|Descripción| El usuario recibirá un formulario que deberá completar para así estar registrado en la aplicación y poder utilizarla. |
+|Importancia| Alta |
+|Estado| Aprobado |
+|Prioridad|	Alta |
+|Comentarios| El usuario deberá introducir datos reales y la contraseña con un formato valido. |
+
+| 2	|  El sistema permitirá introducir un codigo de positivo al usuario |
+|---------------|------------|
+|Versión|	1.0 (14/12/2020)|
+|Dependencias| Sistema de control PCR |
+|Descripción| El usuario una vez que ha acudido al centro medico y la prueba pcr es positiva deberá introducir el código notificado en la aplicación. |
+|Importancia| Alta  |
+|Estado| Aprobado  |
+|Prioridad| Alta	 |
+|Comentarios| El usuario deberá ser responsable y deberá introducir correctamente el código notificado. |
 
 ### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
 #### 6.3.1 Casos de uso del Subsitema Ministerio de Sanidad
