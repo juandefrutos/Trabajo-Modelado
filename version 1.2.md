@@ -695,6 +695,7 @@ Requisitos funcionales:
 ### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
 #### 6.3.1 Casos de uso del Subsitema Ministerio de Sanidad
 ##### 1 Diagramas de Casos de Uso  
+![Caso de Uso Usuarios](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/CUministerio.png)
 ##### 2 Especificación de Casos de Uso 
 
 |1 | Realizar estadísticas|
