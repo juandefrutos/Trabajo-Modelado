@@ -693,6 +693,12 @@ Requisitos funcionales:
 |Comentarios| El usuario deberá ser responsable y deberá introducir correctamente el código notificado. |
 
 ### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
+
+**RU1**: El ministerio de sanidad recibirá datos de cada autonomía
+**RU2**: El ministerio realizará estadísticas con los datos procesados
+**RU3**: El ministerio notificará al territorio español la 
+modificación de restricciones según los resultados de las estadísticas
+
 #### 6.3.1 Casos de uso del Subsitema Ministerio de Sanidad
 ##### 1 Diagramas de Casos de Uso  
 ![Caso de Uso Usuarios](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/CUministerio.png)
@@ -726,19 +732,12 @@ Requisitos funcionales:
 |Estado| Aprobado|
 |Comentarios||
 
-**RU1**: El ministerio de sanidad recibirá datos de cada autonomía
-**RU2**: El ministerio realizará estadísticas con los datos procesados
-**RU3**: El ministerio notificará al territorio español la modificación de restricciones según los resultados de las estadísticas
-
 #### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad   
 
 **RF1**: El sistema debe almacenar los datos recogidos por las autonomías
 **RF2**: El sistema debe enviar los datos recogidos por las autonomías
 **RF3**: El sistema debe almacenar ls estadísiticas realizadas por el ministerio
 **RF4**: El sistema debe notificar el cambio de restricciones a todos los usuarios
-**RU1**: El ministerio de sanidad recibirá datos de cada autonomía
-**RU3**: El ministerio realizará estadísticas con los datos procesados
-**RU4**: El ministerio notificará al territorio español la modificación de restricciones según los resultados de las estadísticas
 
 ### 6.4 Casos de uso y Requisitos Subsistema Centros de Salud
 #### 6.4.1 Casos de uso del Subsitema Centros de Salud
