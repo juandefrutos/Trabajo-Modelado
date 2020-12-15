@@ -407,10 +407,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 |-----------|-----------|
 |Versión| 1.0 (30/11/2020)|
 |Dependencias| • |
-|Descripción| mediante la identificación de los usuarios, se podrá 
-por ejemplo, tener acceso a su historia clínico para estabelecer 
-el nível de riesgo que tiene, también facilita su localización 
-(dirección)|
+|Descripción| mediante la identificación de los usuarios, se podrá por ejemplo, tener acceso a su historia clínico para estabelecer el nível de riesgo que tiene, también facilita su localización (dirección)|
 |Importancia| Alta |
 |Actores| • usuarios |
 |Comentarios| |
@@ -648,13 +645,11 @@ Requisitos de usuario
 6. El usuario recibirá Notificaciones de Restricciones
 7. El usuario Recibira el codigo una vez realizada la pcr y si esta es positiva
 8. El usuario recibira el Resultado de la prueba Medica
-9. El usuario puede Activar GPS 
-10. El usuario puede Desactivar GPS
-11. El usuario recibirá Actualizaciones de la Aplicacion
-12. El usuario puede Activar Datos del Movil
-13. El usuario puede Desactivar Datos del Movil
-14. El usuario podrá confirmar cita pcr
-15. El usuario podra rechazar cita medica
+9. El usuario recibirá Actualizaciones de la Aplicacion
+10. El usuario puede Activar Datos del Movil
+11. El usuario puede Desactivar Datos del Movil
+12. El usuario podrá confirmar cita pcr
+13. El usuario podra rechazar cita medica
 
 #### 6.2.2 Requisitos Funcionales del Subsitema Usuarios  
 Requisitos funcionales:
@@ -668,8 +663,7 @@ Requisitos funcionales:
 8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
 9. El sistema recibirá si hay un incumplimiento de cuarentena
 10. El sistema permitira confirmar o no la cita medica
-11. El sistema permitira activar y desactivar el GPS
-12. El sistema permitira recibir actualizaciones de restricciones
+11. El sistema permitira recibir actualizaciones de restricciones
 
 
 | 1	| El sistema mostrará un formulario de registro para el usuario |
@@ -975,7 +969,6 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 |[Versión] |1.0 15/12/2020| 
 |Dependencias| Todo el sistema |
 |Descripción| No se permite eliminacion ni usuarios duplicados, con esto se realiza que los usuarios no puedan eliminar la informacion hacia el o saltarse las cuarentenas|
-
 |Importancia| Alta  |
 |Prioridad| Alta |
 |Estado| Aprobado |
