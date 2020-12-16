@@ -944,7 +944,7 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 
 ### 6.10 Información Sobre Trazabilidad
 
-- CASOS DE USO FRENTEA REQUISITOS GENERALES 
+- CASOS DE USO FRENTE A REQUISITOS GENERALES 
 
 | | RN01 | RN02 | RN03| RN04 | RN05 | RN06 |
 | -- | -- | -- | -- | -- | -- | 
@@ -1017,6 +1017,30 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 | RF48 |X | | | | |X |
 
 - REQUISITOS NO FUNCIONALES FRENTE A REQUISITOS GENERALES
+
+| | RN01 | RN02 | RN03 | RN04 | RN05 | RN06 |
+| -- | -- | -- | -- | -- | -- | -- | 
+| RNF1 |X |X |X |X |X |X |
+| RNF2 | | | | | | |
+| RNF3 |X |X |X |X |X |X |
+| RNF4 |X | | | | | |
+| RNF5 |X | | | | | |
+| RNF6 |X |X |X |X |X |X |
+| RNF7 |X |X |X |X |X |X |
+| RNF8 |X |X |X |X |X |X |
+| RNF9 |X | | | | | |
+| RNF10 | | | | | | |
+| RNF11 | | | | | |X |
+| RNF12 | | | | | |X |
+| RNF13 | | | | | |X |
+| RNF14 |X |X |X |X |X |X |
+| RNF15 | | | | | | |
+| RNF16 | | | | | | |
+| RNF17 |X |X |X |X |X |X |
+| RNF18 |X |X |X |X |X |X |
+| RNF19 |X |X |X |X |X |X |
+| RNF20 | | | | | | |
+| RNF21 | | | | | |X |
 
 - RESTRICCIONES TECNICAS FRENTE A REQUISITOS GENERALES
 
