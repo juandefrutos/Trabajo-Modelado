@@ -531,7 +531,7 @@ Esta sección contiene la descripción de Pandemio, las caracterísiticas de est
     6.10 Información Sobre Trazabilidad
     
 ### 6.0 Reglas de negocio
-    1: ley de protección de datos
+    1: Cumplimiento de la Ley de Proteccion de Datos
 
 ### 6.1 Requisitos Generales del Subsitema Usuarios
 A continuación se detallan los objetivos generales del sistema, es decir, los requisitos de negocio.
@@ -746,12 +746,12 @@ Requisitos funcionales:
 
 Requisitos de Usuario para los Centros de Salud  
 - RU16: El centro de salud podrá informar de obligación y estado de cuarentena
-- RU17: El centro de salud enviará datos a las autonomías (de los resultados positivos, ¿seria funcional?)
+- RU17: El centro de salud enviará datos a las autonomías
 - RU18: El centro de salud podrá añadir un usuario a la lista de pruebas médicas
-- RU19: El centro médico recibirá información (restricciones, personas que deben hacer pcr)
-- RU20: El centro médico podrá informar a las fuerzas del orden de no realización de pcr (añadir dependencias porque se notifica después al usuario)
-- RU21: El centro médico informará de pcr positivo (informa las fuerzas del orden y al usuario)
-- RU22: El centro médico informará al usuario de un contacto estrecho (lo hace rastreador)
+- RU19: El centro médico recibirá información
+- RU20: El centro médico podrá informar a las fuerzas del orden de no realización de pcr 
+- RU21: El centro médico informará de pcr positivo 
+- RU22: El centro médico informará al usuario de un contacto estrecho
 - RU24: El centro médico podrá comprobar la lista con usuarios pendientes de pcr
 
 
@@ -867,14 +867,14 @@ En el Pliego de condiciones no encontramos ningun requisito no funcional de mant
 - RNF15: El tiempo de inicio o reinicio del sistema debe ser menor a 1min.
 - RNF16: La probabilidad de fallo del sistema será inferior al 5%.
 ##### 8 Otros Requisitos No Funcionales
-- RNF17: El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos (legislativo (impuesto); seguridad y salud).
-- RNF18: El nuevo sistema se acogerá a las GNU (leyes generales públicas), será gratuito, de código abierto, sin patentes (regulatorio (optativo)).
-- RNF19: Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes (ético, legislativo).
+- RNF17: El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos.
+- RNF18: El nuevo sistema se acogerá a las GNU, será gratuito, de código abierto, sin patentes.
+- RNF19: Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes .
 - RNF20: El sistema se desarrollará en java debido a no obligatoriedad por parte del ministerio
 - RNF21: El motor de la base de datos donde se almacenará toda la información será MySQL
 ### 6.8 Restricciones Técnicas del Sistema
 
-Las principales barreras en el uso de nuestra aplicación son sobre todo las zonas menos desarrolladas tecnologicamente. En este apartado vamos a ver todos los problemas que podemos tener como zonas muertas de cobertura, dispositivos moviles antiguos (que no sean smartphones) y dispositivos smartphones desactualizados. 
+Las principales barreras en el uso de nuestra aplicación son sobre todo las zonas menos desarrolladas tecnologicamente. En este apartado vamos a ver todos los problemas que podemos tener como zonas muertas de cobertura, dispositivos moviles antiguos y dispositivos smartphones desactualizados. 
 
 
 
@@ -946,9 +946,42 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 
 - CASOS DE USO FRENTEA REQUISITOS GENERALES 
 
+| | RN01 | RN02 | RN03| RN04 | RN05 | RN06 |
+| -- | -- | -- | -- | -- | -- | 
+| RU01| |  | |  |  | 
+| RU02 |x | x | x|  x| x | |
+| RU03 | x|  | | x |  | |
+| RU05 | x|  | | x |  | |
+| RU06 | x| x | |  | x | |
+| RU07 | x|  | x| x | x | |
+| RU08 | x|  |x | x |  | |
+| RU10 | x|  | |  |  | |
+| RU12 | |  | | x |  | |
+| RU13| x|  | |  |  | |
+| RU15| x|  | |  |  | x|
+| RU16 |x | x | x|  x| x | |
+| RU17 | x|  | | x |  | x|
+| RU18 | |  | | x|  | |
+| RU19 |x |  | |  |  | |
+| RU20 |x |  | x | x |x| | 
+| RU21 |x |  | |  x|  | |
+| RU22 |x |  | x| x |  | |
+| RU24 | | x |x |  |  | |
+| RU25 | x|  | | x |  | |
+| RU26 | x|  | |  |  |x |
+| RU34 | x|  | x |  |  | | 
+| RU35 |x | x | | x |  | |
+| RU36 |x | x | |  | x | |
+| RU37 | x| x | |  | x | |
+| RU38 | x|  | |  | x | |
+| RU39 |x |  | |  | x | |
+
+
 - REQUISITOS DE INFORMACION FRENTE A REQUISITOS GENERALES
 
 - REGLAS DE NEGOCIO FRENTE A REQUISITOS GENERALES 
+
+    Regla de Negocio solo hemos localizado una, La Ley de Proteccion de Datos se debe cumplir en todo momento en la aplicacion, hemos considerado que esta unido en todo moemneto con los requisitos de negocio.
 
 - REQUISITOS FUNCIONALES FRENTE A REQUISITOS GENERALES 
 
