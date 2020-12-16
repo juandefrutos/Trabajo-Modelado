@@ -1,0 +1,123 @@
+/: quitar requisito
++: requisito modificado
+REGLAS DE NEGOCIO
+1: ley de protección de datos
+REQUISITOS DE NEGOCIO
+RN01: sistema de notificaciones
+RN02: sistema de localización
+RN03: sistema de identificación de posibles contagios
+RN04: sistema de control de pcr
+RN05: sistema de control de cuarentena
+RN06: sistema de creación de estadísticas
+REQUISITOS DE USUARIO
+*usuarios*
+RU1: El usuario podrá registrarse
+RU2: El usuario recibirá notificación de contacto estrecho
+RU3: El usuario recibirá notificación de pcr
+RU5: El usuario recibirá cita prueba medica
+RU6: El usuario recibirá notificaciones de restricciones
+RU7: El usuario recibirá código de pcr positiva
+RU8: El usuario recibirá resultado prueba medica
++RU10: El usuario recibirá notificación actualización aplicación
+RU12: El usuario porá confirmar/ rechazar cita pcr
+
+*ministerio*
+RU13: El ministerio recibirá datos de cada autonomía
+/RU14: El ministerio realizará estadísticas con los datos procesados (? no lo hace con la aplicación, solo usa los datos para hacerlas y emite los resultados)
++RU15: El ministerio podrá restricciones (y en dependencias en la tabla metemos lo de estadisticas)
+
+*centro de salud*
++RU16: El centro de salud podrá informar de obligación y estado de cuarentena (lo haria fuerzas del orden, centro medico solo informa del positivo)
++RU17: El centro de salud enviará datos a las autonomías (de los resultados positivos, ¿seria funcional?)
+RU18: El centro de salud podrá añadir un usuario a la lista de pruebas médicas
++RU19: El centro médico recibirá información (restricciones, personas que deben hacer pcr)
++RU20: El centro médico podrá informar a las fuerzas del orden de no realización de pcr (añadir dependencias porque se notifica después al usuario)
++RU21: El centro médico informará de pcr positivo (informa las fuerzas del orden y al usuario)
+RU22: El centro médico informará al usuario de un contacto estrecho (lo hace rastreador)
+/RU23: El centro médico asigna código de positivo (lo hace el sistema rf)
+RU24: El centro médico podrá comprobar la lista con usuarios pendientes de pcr
+
+*autonomías*
++RU25: Las autonomías recibirán datos de positivos (dependencias para hacer estadísticas y los recibe de centro sanitario)
++RU26: Las autonomías enviará datos recogidos al ministerio (dependencias para hacer estadisticas y enviar restricciones)
++/RU27: Las autonomías realizarán estadísticas (añadir dependencias)
+/RU28: Comprobar datos
+/RU29: Enviar datos y estadísticas
+RU30: Las autonomías enviarán restricciones
+/RU31: Nuevas normas
+/RU32: Informar usuarios
+/RU33: Informar centros de salud
+
+*rastreadores*
+RU34: El rastreador informará al usuario de un contacto estrecho
+RU35: El usuario recibirá alerta por usuario positivo (es lo mismo que lo de arriba)
+
+*fuerzas del orden*
+RU36: Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
+RU37: Los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usuario (dependencias localizacion)
+RU38: Los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
+RU39: Los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
+
+REQUSIITOS FUNCIONALES
+*usuarios*
+RF1. El sistema mostrará un formulario de registro para el usuario
+RF2. El sistema informará si un contacto cercano es positivo
+RF3. El sistema permitirá introducir un codigo de positivo al usuario
+/RF4. El sistema permitira activar y desactivar los datos moviles
+/RF5. El sistema permitira actualizar la aplicacion
+RF6. El sistema permitira recibir notificaciones de citas medias
+RF7. El sistema permitira recibir resultado de PCR
+RF8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
+RF9. El sistema recibirá si hay un incumplimiento de cuarentena
+RF10. El sistema permitira confirmar o no la cita medica
+/RF11. El sistema permitira activar y desactivar el GPS
+RF12. El sistema permitira recibir restricciones
+¿ponemos solo recibir notificaciones y en dependencias especificamos: cita médica, restricciones?
+
+*ministerio*
+RF13: El sistema debe almacenar los datos recogidos por las autonomías
+/RF14: El sistema debe enviar los datos recogidos por las autonomías (no los envía, lor procesa y hace estadisticas)
+RF15: El sistema debe almacenar las estadísiticas realizadas por el ministerio
+/RF16: El sistema debe notificar el cambio de restricciones a todos los usuarios (no lo hace el sistema, lo hace el ministerio es RU)
+
+*centro de salud*
+RF17. El sistema enviara un codigo al usuario cuando sea positivo
++RF18. El sistema informara al usuario de la prueba medica (lo hace el centro de salud)
++RF19. El sistema informara a las fuerzas del orden de la no presencia del usuario convocado para la prueba medica
++RF20. El sistema permitira el registro de todos los usuarios (va en RF de usuario)
+RF21. El sistema permitira enviar notificaciones a las fuerzas del orden
+RF22. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las fuerzas del orden
++RF23. El sistema permitira introdrucir usuarios a lista de pruebas medicas (el sistema creará una lista)
+RF24. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
+/RF25. El sistema enviara una notificacion a los usuarios positivos (lo hace el centro medico)
+/RF26. El sistema enviara una notificacion a los contactos estrechos de un usuario positivo (va en rastreadores)
+RF27. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
+RF28. El sistema permitirá el acceso al checkeo de las comprobacion de cuarentenas
++RF29. El sistema creara codigos aleatorios y unicos
+/RF30. El sistema se comunicara con las autonomias (El sistema enviará datos a las autonomías)
+/RF31. El sistema recogera informacion de diferentes actores
+/RF32. El sistema enviara datos a las autonomias (esta repetido)
+
+*autonomías*
++RF33. El sistema se comunicara con el Ministerio de Sanidad (lo hace el usuario autonomia)
+/RF34. El sistema se comunicara con los centros de la salud respectivos
+RF35. El sistema recogera todos los resultados de los usuarios
+RF36. El sistema creara una estadistica con los datos recogidos
+/RF37. El sistema evaluara las estadistica, con el fin de edurecer las restricciones o ablandarlas (no lo evalúa el sistema)
+RF38. El sistema enviara los datos y estadisticas realizadas
+RF39. El sistema informara a los usuarios de las nuevas normas
+/RF40. EL sistema informara a los centros de salud de las nuevas normas (infroma a todos los usuarios)
+
+*rastreadores*
+RF41. El sistema mostrá una lista de personas que han dado positivo
+/RF42. El sistema enviará notificación de contacto estrecho
+RF43: El sistema generará un código de positivo para identificar contactos estrechos
+
+*cuerpos de seguridad*
+RF44: El sistema mostrará una lista de personas que deben hacer cuarentena
+RF45: El sistema mostrará una lista de personas que no han acudido a la pcr
+RF46: El sistema notificará al centro de salud el estado de la cuarentena
+RF47: El sistema notificará al usuario el no acudir a la pcr
+RF48: El sistema mostrará la normativa impuesta
+
+REQUISITOS NO FUNCIONALES
