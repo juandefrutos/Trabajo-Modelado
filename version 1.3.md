@@ -542,12 +542,12 @@ Esta sección contiene la descripción de Pandemio, las caracterísiticas de est
 ### 6.1 Requisitos Generales del Subsitema Usuarios
 A continuación se detallan los objetivos generales del sistema, es decir, los requisitos de negocio.
 
-RN01: sistema de notificaciones
-RN02: sistema de localización
-RN03: sistema de identificación de posibles contagios
-RN04: sistema de control de pcr
-RN05: sistema de control de cuarentena
-RN06: sistema de creación de estadísticas
+- RN01: sistema de notificaciones
+- RN02: sistema de localización
+- RN03: sistema de identificación de posibles contagios
+- RN04: sistema de control de pcr
+- RN05: sistema de control de cuarentena
+- RN06: sistema de creación de estadísticas
 
 |1 | Sistema de notificaciones|
 |---------------|------------|
@@ -646,27 +646,27 @@ RN06: sistema de creación de estadísticas
 |[Estado]| Aprobado  |
 
 Requisitos de usuario 
-RU1: El usuario podrá registrarse
-RU2: El usuario recibirá notificación de contacto estrecho
-RU3: El usuario recibirá notificación de pcr
-RU5: El usuario recibirá cita prueba medica
-RU6: El usuario recibirá notificaciones de restricciones
-RU7: El usuario recibirá código de pcr positiva
-RU8: El usuario recibirá resultado prueba medica
-RU10: El usuario recibirá notificación actualización aplicación
-RU12: El usuario porá confirmar/ rechazar cita pcr
+- RU1: El usuario podrá registrarse
+- RU2: El usuario recibirá notificación de contacto estrecho
+- RU3: El usuario recibirá notificación de pcr
+- RU5: El usuario recibirá cita prueba medica
+- RU6: El usuario recibirá notificaciones de restricciones
+- RU7: El usuario recibirá código de pcr positiva
+- RU8: El usuario recibirá resultado prueba medica
+- RU10: El usuario recibirá notificación actualización aplicación
+- RU12: El usuario porá confirmar/rechazar cita pcr
 
 #### 6.2.2 Requisitos Funcionales del Subsitema Usuarios  
 Requisitos funcionales:
-RF1. El sistema mostrará un formulario de registro para el usuario
-RF2. El sistema informará si un contacto cercano es positivo
-RF3. El sistema permitirá introducir un codigo de positivo al usuario
-RF6. El sistema permitira recibir notificaciones de citas medias
-RF7. El sistema permitira recibir resultado de PCR
-RF8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
-RF9. El sistema mostrará si hay un incumplimiento de cuarentena
-RF10. El sistema permitira confirmar o no la cita medica
-RF12. El sistema permitira recibir restricciones
+- RF1. El sistema mostrará un formulario de registro para el usuario
+- RF2. El sistema informará si un contacto cercano es positivo
+- RF3. El sistema permitirá introducir un codigo de positivo al usuario
+- RF6. El sistema permitira recibir notificaciones de citas medias
+- RF7. El sistema permitira recibir resultado de PCR
+- RF8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
+- RF9. El sistema mostrará si hay un incumplimiento de cuarentena
+- RF10. El sistema permitira confirmar o no la cita medica
+- RF12. El sistema permitira recibir restricciones
 
 
 | 1	| El sistema mostrará un formulario de registro para el usuario |
@@ -691,8 +691,8 @@ RF12. El sistema permitira recibir restricciones
 
 ### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
 
-RU13: El ministerio recibirá datos de cada autonomía
-RU15: El ministerio podrá restricciones (y en dependencias en la tabla metemos lo de estadisticas)
+- RU13: El ministerio recibirá datos de cada autonomía
+- RU15: El ministerio podrá restricciones (y en dependencias en la tabla metemos lo de estadisticas)
 
 #### 6.3.1 Casos de uso del Subsitema Ministerio de Sanidad
 ##### 1 Diagramas de Casos de Uso  
@@ -729,8 +729,8 @@ RU15: El ministerio podrá restricciones (y en dependencias en la tabla metemos 
 
 #### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad   
 
-RF13: El sistema debe almacenar los datos recogidos por las autonomías
-RF15: El sistema debe almacenar las estadísiticas realizadas por el ministerio
+- RF13: El sistema debe almacenar los datos recogidos por las autonomías
+- RF15: El sistema debe almacenar las estadísiticas realizadas por el ministerio
 
 ### 6.4 Casos de uso y Requisitos Subsistema Centros de Salud
 #### 6.4.1 Casos de uso del Subsitema Centros de Salud
@@ -751,28 +751,27 @@ RF15: El sistema debe almacenar las estadísiticas realizadas por el ministerio
 |Comentarios| |
 
 Requisitos de Usuario para los Centros de Salud  
-RU16: El centro de salud podrá informar de obligación y estado de cuarentena
-RU17: El centro de salud enviará datos a las autonomías (de los resultados positivos, ¿seria funcional?)
-RU18: El centro de salud podrá añadir un usuario a la lista de pruebas médicas
-RU19: El centro médico recibirá información (restricciones, personas que deben hacer pcr)
-RU20: El centro médico podrá informar a las fuerzas del orden de no realización de pcr (añadir dependencias porque se notifica después al usuario)
-RU21: El centro médico informará de pcr positivo (informa las fuerzas del orden y al usuario)
-RU22: El centro médico informará al usuario de un contacto estrecho (lo hace rastreador)
-RU24: El centro médico podrá comprobar la lista con usuarios pendientes de pcr
+- RU16: El centro de salud podrá informar de obligación y estado de cuarentena
+- RU17: El centro de salud enviará datos a las autonomías (de los resultados positivos, ¿seria funcional?)
+- RU18: El centro de salud podrá añadir un usuario a la lista de pruebas médicas
+- RU19: El centro médico recibirá información (restricciones, personas que deben hacer pcr)
+- RU20: El centro médico podrá informar a las fuerzas del orden de no realización de pcr (añadir dependencias porque se notifica después al usuario)
+- RU21: El centro médico informará de pcr positivo (informa las fuerzas del orden y al usuario)
+- RU22: El centro médico informará al usuario de un contacto estrecho (lo hace rastreador)
+- RU24: El centro médico podrá comprobar la lista con usuarios pendientes de pcr
 
 
 #### 6.4.2 Requisitos Funcionales del Subsitema Centros de Salud 
-RF17. El sistema enviara un codigo al usuario cuando sea positivo
-RF18. El sistema informara al usuario de la prueba medica
-RF19. El sistema informara a las fuerzas del orden de la no presencia del usuario convocado para la prueba medica
-RF20. El sistema permitira el registro de todos los usuarios
-RF21. El sistema permitira enviar notificaciones a las fuerzas del orden
-RF22. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las fuerzas del orden
-RF23. El sistema permitira introdrucir usuarios a lista de pruebas medicas
-RF24. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
-RF27. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
-RF28. El sistema permitirá el acceso al checkeo de las comprobacion de cuarentenas
-RF29. El sistema creara codigos aleatorios y unicos
+- RF17. El sistema enviara un codigo al usuario cuando sea positivo
+- RF18. El sistema informara al usuario de la prueba medica
+- RF19. El sistema informara a las fuerzas del orden de la no presencia del usuario convocado para la prueba medica
+- RF21. El sistema permitira enviar notificaciones a las fuerzas del orden
+- RF22. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las fuerzas del orden
+- RF23. El sistema permitira introdrucir usuarios a lista de pruebas medicas
+- RF24. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
+- RF27. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
+- RF28. El sistema permitirá el acceso al checkeo de las comprobacion de cuarentenas
+- RF29. El sistema creara codigos aleatorios y unicos
 
 |1| El sistema enviara un codigo al usuario cuando sea positivo|
 |---------------|------------|
@@ -801,16 +800,16 @@ RF29. El sistema creara codigos aleatorios y unicos
 ##### 2 Especificación de Casos de Uso
 
 Requisitos de Usuario para las Autonomias  
-RU25: Las autonomías recibirán datos de positivos 
-RU26: Las autonomías enviará datos recogidos al ministerio 
-RU30: Las autonomías enviarán restricciones
+- RU25: Las autonomías recibirán datos de positivos 
+- RU26: Las autonomías enviará datos recogidos al ministerio 
+- RU30: Las autonomías enviarán restricciones
 
 #### 6.5.2 Requisitos Funcionales del Subsitema Autonomias 
 
-RF33. El sistema se comunicara con el Ministerio de SanidadRF35. El sistema recogera todos los resultados de los usuarios
-RF36. El sistema creara una estadistica con los datos recogidos
-RF38. El sistema enviara los datos y estadisticas realizadas
-RF39. El sistema informara a los usuarios de las nuevas normas
+- RF33. El sistema se comunicara con el Ministerio de SanidadRF35. El sistema recogera todos los resultados de los usuarios
+- RF36. El sistema creara una estadistica con los datos recogidos
+- RF38. El sistema enviara los datos y estadisticas realizadas
+- RF39. El sistema informara a los usuarios de las nuevas normas
 
 ### 6.6 Casos de uso y Requisitos Subsistema Rastreadores
 #### 6.6.1 Casos de uso del Subsitema Rastreadores
@@ -819,13 +818,13 @@ RF39. El sistema informara a los usuarios de las nuevas normas
 ##### 2 Especificación de Casos de Uso 
 
 Requisitos de Usuario para los Rastreadores
-RU34: El rastreador informará al usuario de un contacto estrecho
-RU35: El usuario recibirá alerta por usuario positivo
+- RU34: El rastreador informará al usuario de un contacto estrecho
+- RU35: El usuario recibirá alerta por usuario positivo
 
 #### 6.6.2 Requisitos Funcionales del Subsitema Rastreadores  
 
-RF41. El sistema mostrá una lista de personas que han dado positivo
-RF43: El sistema generará un código de positivo para identificar contactos estrechos
+- RF41. El sistema mostrá una lista de personas que han dado positivo
+- RF43: El sistema generará un código de positivo para identificar contactos estrechos
 
 ### 6.7 Casos de uso y Requisitos Subsistema Fuerzas del Orden
 #### 6.7.1 Casos de uso del Subsitema Fuerzas del Orden
@@ -834,49 +833,54 @@ RF43: El sistema generará un código de positivo para identificar contactos est
 ##### 2 Especificación de Casos de Uso 
 
 Requisitos de Usuario para las Fuerzas del Orden
-RU36: Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
-RU37: Los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usuario 
-RU38: Los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
-RU39: Los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
+- RU36: Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
+- RU37: Los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usuario 
+- RU38: Los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
+- RU39: Los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
 
 #### 6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden   
 
-RF44: El sistema mostrará una lista de personas que deben hacer cuarentena
-RF45: El sistema mostrará una lista de personas que no han acudido a la pcr
-RF46: El sistema notificará al centro de salud el estado de la cuarentena
-RF47: El sistema notificará al usuario el no acudir a la pcr
-RF48: El sistema mostrará la normativa impuesta
+- RF44: El sistema mostrará una lista de personas que deben hacer cuarentena
+- RF45: El sistema mostrará una lista de personas que no han acudido a la pcr
+- RF46: El sistema notificará al centro de salud el estado de la cuarentena
+- RF47: El sistema notificará al usuario el no acudir a la pcr
+- RF48: El sistema mostrará la normativa impuesta
 
 #### 6.7.3 Requisitos No Funcionales para todo el sistema
 
-
 ##### 1 Requisitos de Fiabilidad 
-1. El sistema ha de garantizar que la información personal de los usuarios sólo será accesible mediante autorización explícita 
+
+- RNF1: El sistema ha de garantizar que la información personal de los usuarios sólo será accesible mediante autorización explícita 
 ##### 2 Requisitos de Usabilidad 
-1. El tiempo de aprendizaje del sistema por parte del usuario debe ser inferior a 2 horas.
-2. El sistema debe contar con manuales de usuario y ayuda online.
-3. El sistema proporcionará mensajes de error claros y concisos.
-4. El sistema contará con un menu de barra para que se pueda identificar donde se elaboran procesos como notificación de incumplimiento, etc
+
+- RNF2: El tiempo de aprendizaje del sistema por parte del usuario debe ser inferior a 2 horas.
+- RNF3: El sistema debe contar con manuales de usuario y ayuda online.
+- RNF4: El sistema proporcionará mensajes de error claros y concisos.
+- RNF5: El sistema contará con un menu de barra para que se pueda identificar donde se elaboran procesos como notificación de incumplimiento, etc
 ##### 3 Requisitos de Eficiencia
-1. El sistema debe ser capaz de procesar 3 transacciones por segundo
-2. Toda transacción debe responder al usuario en menos de 3s
-3. El sistema debe soportar 20millones de conexiones simultáneas
+- RNF6: El sistema debe ser capaz de procesar 3 transacciones por segundo
+- RNF7: Toda transacción debe responder al usuario en menos de 3s
+- RNF8: El sistema debe soportar 20millones de conexiones simultáneas
 ##### 4 Requisitos de Mantenibilidad  
+En el Pliego de condiciones no encontramos ningun requisito no funcional de mantenibilidad, pero indicamos uno a modo de ejemplo.
+- RNF9: El sistema se actualizara en funcion de las actualizaciones procedentes del sistema operativo (android/ios)
 ##### 5 Requisitos de Portabilidad
+En el Pliego de condiciones no encontramos ningun requisito no funcional de mantenibilidad, pero indicamos uno a modo de ejemplo.
+- RNF10: El sistema será desarrollado para su compatibilidad con sistemas operativos de Windows, Mac o Linux
 ##### 6 Requisitos de Seguridad
-1. Los permisos de acceso al sistema podrán ser cambiados solamente por los administradores de BD
-2. El sistema a desarrollar debe de hacerlo siguiendo patrones de programación que incrementen la seguridad de los datos.
-3. El sistema debe hacer un backup cada 24 horas.
+- RNF11: Los permisos de acceso al sistema podrán ser cambiados solamente por los administradores de BD
+- RNF12: El sistema a desarrollar debe de hacerlo siguiendo patrones de programación que incrementen la seguridad de los datos.
+- RNF13: El sistema debe hacer un backup cada 24 horas.
 ##### 7 Requisitos de Dependibilidad
-1. El sistema debe tener una disponibilidad de al menos el 99,99% de las veces que el usuario quiera acceder.
-2. El tiempo de inicio o reinicio del sistema debe ser menor a 1 min.
-3. La probabilidad de fallo del sistema será inferior al 5%.
+- RNF14: El sistema debe tener una disponibilidad de al menos el 99,99% de las veces que el usuario quiera acceder.
+- RNF15: El tiempo de inicio o reinicio del sistema debe ser menor a 1min.
+- RNF16: La probabilidad de fallo del sistema será inferior al 5%.
 ##### 8 Otros Requisitos No Funcionales
-1. El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos (legislativo (impuesto); seguridad y salud).
-2. El nuevo sistema se acogerá a las GNU (leyes generales públicas), será gratuito, de código abierto, sin patentes (regulatorio (optativo)).
-3. Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes (ético, legislativo).
-4. El sistema se desarrollará en java debido a no obligatoriedad por parte del ministerio
-5. El motor de la base de datos donde se almacenará toda la información será MySQL
+- RNF17: El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos (legislativo (impuesto); seguridad y salud).
+- RNF18: El nuevo sistema se acogerá a las GNU (leyes generales públicas), será gratuito, de código abierto, sin patentes (regulatorio (optativo)).
+- RNF19: Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes (ético, legislativo).
+- RNF20: El sistema se desarrollará en java debido a no obligatoriedad por parte del ministerio
+- RNF21: El motor de la base de datos donde se almacenará toda la información será MySQL
 ### 6.8 Restricciones Técnicas del Sistema
 
 Las principales barreras en el uso de nuestra aplicación son sobre todo las zonas menos desarrolladas tecnologicamente. En este apartado vamos a ver todos los problemas que podemos tener como zonas muertas de cobertura, dispositivos moviles antiguos (que no sean smartphones) y dispositivos smartphones desactualizados. 
