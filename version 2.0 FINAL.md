@@ -988,9 +988,6 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 | RU38 | x|  | |  | x | |
 | RU39 |x |  | |  | x | |
 
-
-- REQUISITOS DE INFORMACION FRENTE A REQUISITOS GENERALES
-
 - REGLAS DE NEGOCIO FRENTE A REQUISITOS GENERALES 
 
     Regla de Negocio solo hemos localizado una, La Ley de Proteccion de Datos se debe cumplir en todo momento en la aplicacion, hemos considerado que esta unido en todo moemneto con los requisitos de negocio.
@@ -1027,8 +1024,6 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 | RF46 |X | | | |X | |
 | RF47 |X | | |X | | |
 | RF48 |X | | | | |X |
-
-- REQUISITOS NO FUNCIONALES FRENTE A REQUISITOS GENERALES
 
 - RESTRICCIONES TECNICAS FRENTE A REQUISITOS GENERALES
 
