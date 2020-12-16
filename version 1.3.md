@@ -154,12 +154,6 @@ Pandemio llega para sustituir a RadarCovid mejorando muchos aspectos en lo que a
 |Descripción| La aplicación esta todo el rato funcionando lo que provoca que este siempre enviando información y a su vez nos proporciona actualización en tiempo real y preciso.|
 |Comentarios| |
 
-|4| Ubicación|
-|---------------|------------|
-|[Versión] |1.4 14/11/2020|
-|Descripción| Uso de la ubicación para informar mediante notificaciones si la zona en la que te encuentras esta afectada o si esta libre de covid para evitar contagios. |
-|Comentarios| Mejorar en tal caso la precision y la ubicación.|
-
 
 #### 3.1.2 Debilidades de la Situación Actual
 La aplicación de Pandemio también por su parte tiene distintos problemas los cuales debemos tener en cuenta para la creación de esta. Muchos problemas vienen asociados a la tecnología que tenemos ahora mismo la cual en muchas zonas sobre todo rurales no han llegado a entrar de la forma que debería. En los cuadros a continuación contamos con los distintos problemas que podemos encontrar.
@@ -183,6 +177,12 @@ La aplicación de Pandemio también por su parte tiene distintos problemas los c
 |[Versión] |1.4 14/11/2020|
 |Descripción| Mucha gente solo usa su smartphone con conexión a internet cuando disponen de una red wifi para acceder a servicios en linea por lo que es necesario tener en cuenta a este tipo de personas para el uso diario de la aplicación. |
 |Comentarios| |  
+
+|3| Bluetooth|
+|---------------|------------|
+|[Versión] |1.4 14/11/2020|
+|Descripción| El uso del Blouetooth como sistema de referencia para la obtencion de la localización es ineficiente debido a su corto alcance y su ineficiencia si el bluetooth está conectado a otro dispositivo como unos cascos o un manos libres. Ademas, detecta un numero limitado de dispositivos. |
+|Comentarios| | 
 ### 3.2 Modelos de Procesos de Negocio Actuales
 El modelo de proceso de negocio actual es Radar COVID. Esta aplicación se enmarca en un proyecto coordinado por la Secretaria de Estado de Digitalización e Inteligencia artificial, dependiente del Ministerio de Asuntos Económicos y Transformación Digital con el apoyo del Ministerio de Sanidad y las comunidades autónomas en su implementación y evaluación.
 #### 3.2.1 Descripción de los Actores de Negocio Actuales
@@ -423,8 +423,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 |Prioridad| Media |
 |Comentarios| Este subsitema se encargara del control de las normas impuestas realizando controles y poniendo multas a las personas las cuales incumplan las normas|
 
-![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/PoliciaArbolCaracteristicas.png)  
-![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/PoliciaFlujo.png)
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/PoliciaArbolCaracteristicas.png)  
 
 |2| Rastreadores  |
 |-----------|-----------|
@@ -435,8 +434,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 |Prioridad| Baja |
 |Comentarios| Los rastreadores se contratan con la intencion de controlar posibles personas las cuales no tengan acceso a un dispositivo smartphone |
 
-![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/RastreadorArbolCaracteristicas.png)  
-![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/RastreadorFlujo.png)
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/RastreadorArbolCaracteristicas.png)  
 
 |3| Centos de salud  |
 |-----------|-----------|
@@ -448,8 +446,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 |Comentarios| En este subsistema se daran de alta los positivos y se les asiganra un codigo unico para el usuario. Tambien sera la conexion entre las autonomias y las fuerzas del orden y usuarios.|
 
 
-![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/CentrodeSalud.png)  
-![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/CentrosdeSaludFlujo.png)
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/CentrosdeSalud.png)  
 
 |4| Autonomias |
 |-----------|-----------|
@@ -459,8 +456,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 |Importancia| Alta|  
 |Prioridad| Media |
 |Comentarios| Las autonomias consiste en un via conductora entre las normas dictadas a nivel nacional por el Ministerio de Sanidad y los Centros de Salud|
-![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/Autonomias.png)  
-![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/AutonomiaFlujo.png)
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/Autonomias.png)  
 
 
 |5	|Usuario|
@@ -472,8 +468,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 |Prioridad|	Alta|
 |Comentarios	|El usuario deberá ser responsable y si es positivo permanecer en casa en cuarentena, a su vez, deberá mantener la ubicación activada para tener control sobre la zona en la que está si es peligrosa o no.|
 
-![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/ArbolcaracteristicasUsuariodaniel.png)  
-![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/FlujousuarioDaniel.png)
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/ArbolcaracteristicasUsuariodaniel.png)  
 
 
 |6	|Ministerio de Sanidad|
@@ -485,8 +480,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 |Prioridad|	Media|
 |Comentarios	|El gobierno recopila todos los datos referentes de todas las autonomías.|
 
-![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/Arbolcaracteristicasgobiernodaniel.png)  
-![Diagrama de Flujo](https://github.com/juandefrutos/Trabajo-Modelado/Diagramadeflujogobiernodaniel.png)
+![Arbol de Carcteristicas](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/Arbolcaracteristicasgobiernodaniel.png)  
 
 ## 6.Catalogo de Requisitos del Sistema a Desarrollar  
 Esta sección contiene la descripción de Pandemio, las caracterísiticas de esta aplicación para ayudar a reducir la pandemia mundial.
@@ -769,8 +763,6 @@ Requisitos de Usuario para los Centros de Salud
 - RF22. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las fuerzas del orden
 - RF23. El sistema permitira introdrucir usuarios a lista de pruebas medicas
 - RF24. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
-- RF27. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
-- RF28. El sistema permitirá el acceso al checkeo de las comprobacion de cuarentenas
 - RF29. El sistema creara codigos aleatorios y unicos
 
 |1| El sistema enviara un codigo al usuario cuando sea positivo|
@@ -806,8 +798,7 @@ Requisitos de Usuario para las Autonomias
 
 #### 6.5.2 Requisitos Funcionales del Subsitema Autonomias 
 
-- RF33. El sistema se comunicara con el Ministerio de SanidadRF35. El sistema recogera todos los resultados de los usuarios
-- RF36. El sistema creara una estadistica con los datos recogidos
+- RF35. El sistema recogera todos los resultados de los usuarios
 - RF38. El sistema enviara los datos y estadisticas realizadas
 - RF39. El sistema informara a los usuarios de las nuevas normas
 
@@ -950,26 +941,6 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 |Prioridad| Alta |
 |Estado| Aprobado|
 |Comentarios| Para el control de las cuarentenas se impondra un rango de 20 metros|
-
-|4|El sistema cumplira la Ley de Proteccion de Datos |
-|---------------|------------|
-|[Versión] |1.0 15/12/2020| 
-|Dependencias| Todo el sistema |
-|Descripción| La ley de proteccion se cumplira en todo momento actualizancion la aplicacion si es necesario en los momentos en los que la ley pueda cambiar |
-|Importancia| Alta  |
-|Prioridad| Alta |
-|Estado| Aprobado |
-|Comentarios|El Gobierno cambiara la Ley de Proteccion de Datos a nuestra disposicion |
-
-|5|El sistema no permite usuarios duplicados y eliminacion de usuarios|
-|---------------|------------|
-|[Versión] |1.0 15/12/2020| 
-|Dependencias| Todo el sistema |
-|Descripción| No se permite eliminacion ni usuarios duplicados, con esto se realiza que los usuarios no puedan eliminar la informacion hacia el o saltarse las cuarentenas|
-|Importancia| Alta  |
-|Prioridad| Alta |
-|Estado| Aprobado |
-|Comentarios| |
 
 ### 6.10 Información Sobre Trazabilidad
 
