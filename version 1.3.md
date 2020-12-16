@@ -490,7 +490,7 @@ la pcr, asi como los que deben cumplir cuarentena |
 
 ## 6.Catalogo de Requisitos del Sistema a Desarrollar  
 Esta sección contiene la descripción de Pandemio, las caracterísiticas de esta aplicación para ayudar a reducir la pandemia mundial.
-
+     6.0 Regla de Negocio
      6.1 Requisitos Generales del Subsitema Usuarios
      
      6.2 Casos de uso y Requisitos Subsistema Usuarios
@@ -536,9 +536,18 @@ Esta sección contiene la descripción de Pandemio, las caracterísiticas de est
     6.9 Requisitos de Integración del Sistema
     6.10 Información Sobre Trazabilidad
     
-    
+### 6.0 Reglas de negocio
+    1: ley de protección de datos
+
 ### 6.1 Requisitos Generales del Subsitema Usuarios
 A continuación se detallan los objetivos generales del sistema, es decir, los requisitos de negocio.
+
+RN01: sistema de notificaciones
+RN02: sistema de localización
+RN03: sistema de identificación de posibles contagios
+RN04: sistema de control de pcr
+RN05: sistema de control de cuarentena
+RN06: sistema de creación de estadísticas
 
 |1 | Sistema de notificaciones|
 |---------------|------------|
@@ -637,33 +646,27 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |[Estado]| Aprobado  |
 
 Requisitos de usuario 
-1. El usuario recibe una notificacion de pcr
-2. El usuario podrá Registrarse
-3. El usuario recibirá Notificaciones de contacto cercano
-4. El usuario recibira Recibir Alertas 
-5. El usuario Recibira cita Prueba Medica
-6. El usuario recibirá Notificaciones de Restricciones
-7. El usuario Recibira el codigo una vez realizada la pcr y si esta es positiva
-8. El usuario recibira el Resultado de la prueba Medica
-9. El usuario recibirá Actualizaciones de la Aplicacion
-10. El usuario puede Activar Datos del Movil
-11. El usuario puede Desactivar Datos del Movil
-12. El usuario podrá confirmar cita pcr
-13. El usuario podra rechazar cita medica
+RU1: El usuario podrá registrarse
+RU2: El usuario recibirá notificación de contacto estrecho
+RU3: El usuario recibirá notificación de pcr
+RU5: El usuario recibirá cita prueba medica
+RU6: El usuario recibirá notificaciones de restricciones
+RU7: El usuario recibirá código de pcr positiva
+RU8: El usuario recibirá resultado prueba medica
+RU10: El usuario recibirá notificación actualización aplicación
+RU12: El usuario porá confirmar/ rechazar cita pcr
 
 #### 6.2.2 Requisitos Funcionales del Subsitema Usuarios  
 Requisitos funcionales:
-1. El sistema mostrará un formulario de registro para el usuario
-2. El sistema informara si un contacto cercano es positivo
-3. El sistema permitirá introducir un codigo de positivo al usuario
-4. El sistema permitira activar y desactivar los datos moviles
-5. El sistema permitira actualizar la aplicacion
-6. El sistema permitira recibir notificaciones de citas medias
-7. El sistema permitira recibir resultado de PCR
-8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
-9. El sistema recibirá si hay un incumplimiento de cuarentena
-10. El sistema permitira confirmar o no la cita medica
-11. El sistema permitira recibir actualizaciones de restricciones
+RF1. El sistema mostrará un formulario de registro para el usuario
+RF2. El sistema informará si un contacto cercano es positivo
+RF3. El sistema permitirá introducir un codigo de positivo al usuario
+RF6. El sistema permitira recibir notificaciones de citas medias
+RF7. El sistema permitira recibir resultado de PCR
+RF8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
+RF9. El sistema mostrará si hay un incumplimiento de cuarentena
+RF10. El sistema permitira confirmar o no la cita medica
+RF12. El sistema permitira recibir restricciones
 
 
 | 1	| El sistema mostrará un formulario de registro para el usuario |
@@ -688,10 +691,8 @@ Requisitos funcionales:
 
 ### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
 
-**RU1**: El ministerio de sanidad recibirá datos de cada autonomía
-**RU2**: El ministerio realizará estadísticas con los datos procesados
-**RU3**: El ministerio notificará al territorio español la 
-modificación de restricciones según los resultados de las estadísticas
+RU13: El ministerio recibirá datos de cada autonomía
+RU15: El ministerio podrá restricciones (y en dependencias en la tabla metemos lo de estadisticas)
 
 #### 6.3.1 Casos de uso del Subsitema Ministerio de Sanidad
 ##### 1 Diagramas de Casos de Uso  
@@ -728,10 +729,8 @@ modificación de restricciones según los resultados de las estadísticas
 
 #### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad   
 
-**RF1**: El sistema debe almacenar los datos recogidos por las autonomías
-**RF2**: El sistema debe enviar los datos recogidos por las autonomías
-**RF3**: El sistema debe almacenar ls estadísiticas realizadas por el ministerio
-**RF4**: El sistema debe notificar el cambio de restricciones a todos los usuarios
+RF13: El sistema debe almacenar los datos recogidos por las autonomías
+RF15: El sistema debe almacenar las estadísiticas realizadas por el ministerio
 
 ### 6.4 Casos de uso y Requisitos Subsistema Centros de Salud
 #### 6.4.1 Casos de uso del Subsitema Centros de Salud
@@ -752,33 +751,28 @@ modificación de restricciones según los resultados de las estadísticas
 |Comentarios| |
 
 Requisitos de Usuario para los Centros de Salud  
-1. Enviar Datos a las Autonomias
-2. Añadir Usuario a la Lista Pruebas Medicas
-3. Recibir Informacion
-4. Informar Fuerzas del Orden
-5. Uusario Positivo
-6. Informar a Contactos Estrechos
-7. Asignar Codigo
-8. Comprobrar Lista Pruebas
-9. Informar Cuarentenas
+RU16: El centro de salud podrá informar de obligación y estado de cuarentena
+RU17: El centro de salud enviará datos a las autonomías (de los resultados positivos, ¿seria funcional?)
+RU18: El centro de salud podrá añadir un usuario a la lista de pruebas médicas
+RU19: El centro médico recibirá información (restricciones, personas que deben hacer pcr)
+RU20: El centro médico podrá informar a las fuerzas del orden de no realización de pcr (añadir dependencias porque se notifica después al usuario)
+RU21: El centro médico informará de pcr positivo (informa las fuerzas del orden y al usuario)
+RU22: El centro médico informará al usuario de un contacto estrecho (lo hace rastreador)
+RU24: El centro médico podrá comprobar la lista con usuarios pendientes de pcr
+
 
 #### 6.4.2 Requisitos Funcionales del Subsitema Centros de Salud 
-1. El sistema enviara un codigo al usuario cuando sea positivo
-2. El sistema informara al usuario de la prueba medica
-3. El sistema informara a las fuerzas del orden de la no presencia del usuario convocado para la prueba medica
-4. El sistema permitira el registro de todos los usuarios
-5. El sistema permitira enviar notificaciones a las fuerzas del orden
-6. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las fuerzas del orden
-7. El sistema permitira introdrucir usuarios a lista de pruebas medicas
-8. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
-9. El sistema enviara una notificacion a los usuarios positivos
-10. El sistema enviara una notificacion a los contactos estrechos de un usuario positivo
-11. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
-12. El sistema tendra acceso al checkeo de las comprobacion de cuarentenas
-13. El sistema creara codigos aleatorios y unicos
-14. El sistema se comunicara con las autonomias
-15. El sistema recogera informacion de diferentes actores
-16. El sistema enviara datos a las autonomias
+RF17. El sistema enviara un codigo al usuario cuando sea positivo
+RF18. El sistema informara al usuario de la prueba medica
+RF19. El sistema informara a las fuerzas del orden de la no presencia del usuario convocado para la prueba medica
+RF20. El sistema permitira el registro de todos los usuarios
+RF21. El sistema permitira enviar notificaciones a las fuerzas del orden
+RF22. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las fuerzas del orden
+RF23. El sistema permitira introdrucir usuarios a lista de pruebas medicas
+RF24. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
+RF27. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
+RF28. El sistema permitirá el acceso al checkeo de las comprobacion de cuarentenas
+RF29. El sistema creara codigos aleatorios y unicos
 
 |1| El sistema enviara un codigo al usuario cuando sea positivo|
 |---------------|------------|
@@ -807,37 +801,32 @@ Requisitos de Usuario para los Centros de Salud
 ##### 2 Especificación de Casos de Uso
 
 Requisitos de Usuario para las Autonomias  
-1. Recoger Datos
-2. Notificar Ministerio de Sanidad
-3. Realizar Estadistica
-4. Comprobar datos
-5. Enviar Datos y Estadistica
-6. Nuevas normas
-7. Informar Usuarios
-8. Informar Centros de Salud 
+RU25: Las autonomías recibirán datos de positivos 
+RU26: Las autonomías enviará datos recogidos al ministerio 
+RU30: Las autonomías enviarán restricciones
+
 #### 6.5.2 Requisitos Funcionales del Subsitema Autonomias 
 
-1. El sistema se comunicara con el Ministerio de Sanidad
-2. El sistema se comunicara con los centros de la salud respectivos
-3. El sistema recogera todos los resultados de los usuarios
-4. El sistema creara una estadistica con los datos recogidos
-5. El sistema evaluara las estadistica, con el fin de edurecer las restricciones o ablandarlas
-6. El sistema enviara los datos y estadisticas realizadas
-7. El sistema informara a los usuarios de las nuevas normas
-8. EL sistema informara a los centros de salud de las nuevas normas
+RF33. El sistema se comunicara con el Ministerio de SanidadRF35. El sistema recogera todos los resultados de los usuarios
+RF36. El sistema creara una estadistica con los datos recogidos
+RF38. El sistema enviara los datos y estadisticas realizadas
+RF39. El sistema informara a los usuarios de las nuevas normas
+
 ### 6.6 Casos de uso y Requisitos Subsistema Rastreadores
 #### 6.6.1 Casos de uso del Subsitema Rastreadores
 ##### 1 Diagramas de Casos de Uso   
 ![Caso de Uso Rastreadores](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/RastreadorCasoDeUso.png)
 ##### 2 Especificación de Casos de Uso 
 
-equisitos de Usuario para los Rastreadores
-1. El rastreador podrá enviar notificación al usuario de identificación de un contacto estrecho
-2. El rastreador recibirá alerta por usuario positivo
+Requisitos de Usuario para los Rastreadores
+RU34: El rastreador informará al usuario de un contacto estrecho
+RU35: El usuario recibirá alerta por usuario positivo
+
 #### 6.6.2 Requisitos Funcionales del Subsitema Rastreadores  
 
-1. El sistema mostrá una lista de personas que han dado positivo
-2. El sistema enviará notificación de contacto estrecho
+RF41. El sistema mostrá una lista de personas que han dado positivo
+RF43: El sistema generará un código de positivo para identificar contactos estrechos
+
 ### 6.7 Casos de uso y Requisitos Subsistema Fuerzas del Orden
 #### 6.7.1 Casos de uso del Subsitema Fuerzas del Orden
 ##### 1 Diagramas de Casos de Uso  
@@ -845,18 +834,22 @@ equisitos de Usuario para los Rastreadores
 ##### 2 Especificación de Casos de Uso 
 
 Requisitos de Usuario para las Fuerzas del Orden
-1. Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
-2. los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usario
-4. los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
-5. los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
+RU36: Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
+RU37: Los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usuario 
+RU38: Los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
+RU39: Los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
+
 #### 6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden   
 
-1. El sistema mostrará una lista de personas que deben hacer cuarentena
-2. El sistema mostrará una lista de personas que no han acudido a la pcr
-3. El sistema notificará al centro de salud el estado de la cuarentena
-4. El sistema notificará al usuario el no acudir a la pcr
-5. El sistema mostrá la normativa impuesta 
+RF44: El sistema mostrará una lista de personas que deben hacer cuarentena
+RF45: El sistema mostrará una lista de personas que no han acudido a la pcr
+RF46: El sistema notificará al centro de salud el estado de la cuarentena
+RF47: El sistema notificará al usuario el no acudir a la pcr
+RF48: El sistema mostrará la normativa impuesta
+
 #### 6.7.3 Requisitos No Funcionales para todo el sistema
+
+
 ##### 1 Requisitos de Fiabilidad 
 1. El sistema ha de garantizar que la información personal de los usuarios sólo será accesible mediante autorización explícita 
 ##### 2 Requisitos de Usabilidad 
