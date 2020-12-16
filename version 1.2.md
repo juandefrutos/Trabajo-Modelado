@@ -493,7 +493,54 @@ el nível de riesgo que tiene, también facilita su localización
 
 ## 6.Catalogo de Requisitos del Sistema a Desarrollar  
 Esta sección contiene la descripción de Pandemio, las caracterísiticas de esta aplicación para ayudar a reducir la pandemia mundial.
-### 6.1 Requisitos Generales del Sistema
+
+     6.1 Requisitos Generales del Subsitema Usuarios
+     
+     6.2 Casos de uso y Requisitos Subsistema Usuarios
+        6.2.1 Casos de uso del Subsitema Usuarios
+            1 Diagramas de Casos de Uso   
+            2 Especificación de Casos de Uso 
+        6.2.2 Requisitos Funcionales del Subsitema Usuarios  
+
+    6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
+        6.3.1 Casos de uso del Subsitema Ministerio de Sanidad
+            1 Diagramas de Casos de Uso  
+            2 Especificación de Casos de Uso 
+        6.3.2 Requisitos Funcionales del Subsitema Ministerio de Sanidad  
+    6.4 Casos de uso y Requisitos Subsistema Centros de Salud
+        6.4.1 Casos de uso del Subsitema Centros de Salud
+            1 Diagramas de Casos de Uso  
+            2 Especificación de Casos de Uso 
+        6.4.2 Requisitos Funcionales del Subsitema Centros de Salud 
+    6.5 Casos de uso y Requisitos Subsistema Autonomias
+        6.5.1 Casos de uso del Subsitema Autonomias
+            1 Diagramas de Casos de Uso  
+            2 Especificación de Casos de Uso 
+        6.5.2 Requisitos Funcionales del Subsitema Autonomias  
+     6.6 Casos de uso y Requisitos Subsistema Rastreadores
+        6.6.1 Casos de uso del Subsitema Rastreadores
+            1 Diagramas de Casos de Uso  
+            2 Especificación de Casos de Uso 
+        6.6.2 Requisitos Funcionales del Subsitema Rastreadores  
+    6.7 Casos de uso y Requisitos Subsistema Fuerzas del Orden
+        6.7.1 Casos de uso del Subsitema Fuerzas del Orden
+            1 Diagramas de Casos de Uso  
+            2 Especificación de Casos de Uso 
+        6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden  
+        6.7.3 Requisitos No Funcionales para todo el sistema
+            1 Requisitos de Fiabilidad  
+            2 Requisitos de Usabilidad  
+            3 Requisitos de Eficiencia
+            4 Requisitos de Mantenibilidad  
+            5 Requisitos de Portabilidad
+            6 Requisitos de Seguridad
+            7 Otros Requisitos No Funcionales
+    6.8 Restricciones Técnicas del Sistema
+    6.9 Requisitos de Integración del Sistema
+    6.10 Información Sobre Trazabilidad
+    
+    
+### 6.1 Requisitos Generales del Subsitema Usuarios
 A continuación se detallan los objetivos generales del sistema, es decir, los requisitos de negocio.
 
 |1 | Sistema de notificaciones|
@@ -561,35 +608,101 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Prioridad| Media|
 |Estado| Aprobado|
 |Comentarios||
-
 ### 6.2 Casos de uso y Requisitos Subsistema Usuarios
-#### 6.2.1 Casos de uso del Subsistema Usuarios
-##### 1 Diagramas de Casos de Uso  
-##### 2 Especificación de Actores 
-##### 3 Especificación de Casos de Uso 
-#### 6.2.2 Requisitos Funcionales del Subsistema Usuarios  
-##### 1 Requisitos de Información   
-##### 2 Requisitos de Reglas de Negocio  
-##### 3 Requisitos de Conducta 
-#### 6.2.3 Requisitos No Funcionales del Subsistema Usuarios
-##### 1 Requisitos de Fiabilidad  
-##### 2 Requisitos de Usabilidad  
-##### 3 Requisitos de Eficiencia
-##### 4 Requisitos de Mantenibilidad  
-##### 5 Requisitos de Portabilidad
-##### 6 Requisitos de Seguridad
-##### 7 Otros Requisitos No Funcionales
+#### 6.2.1 Casos de uso del Subsitema Usuarios
+##### 1 Diagramas de Casos de Uso
+![Caso de Uso Usuarios](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/caso%20uso%20usuario.png)    
+##### 2 Especificación de Casos de Uso 
+| 1	| Registrarse |
+|---------------|------------|
+|Versión|	1.0 (12/12/2020)|
+|Dependencias| Sistema de registro de usuario |
+|Precondición| Descargar aplicación pandemio en su smartphone  |
+|Descripción| El usuario al descargar la aplicación deberá realizar un formulario para garantizar la seguridad en su apliacion |
+|Secuencia normal| 1. El usuario deberá descargar la aplicación. 2. El usuario deberá introducir su correo y contraseña para crear una cuenta nueva. 3. El usuario deberá introducir su nombre y su dni |
+|Postcondicion| Utilización de la app de forma efectiva |
+|Excepciones| 1.El sistema no responde. 2.El acceso a internet está desctivado. 3.L ubicación GPS está desactivada |
+|[Importancia]|  Alta |
+|[Prioridad]| Alta  |  
+|[Estado]| Aprobado  |
+
+| 2	| Notificar contacto cercano |
+|---------------|------------|
+|Versión|	1.0 (12/12/2020)|
+|Dependencias| Sistema de notificaciones |
+|Precondición| El usuario debe de haber estado en contacto con una persona positiva en covid 19. |
+|Descripción| El usuario recibe una notificación indicando de que alguien de su entorno es positivo en covid 19.|
+|Secuencia normal| 1. El usuario debe de salir de casa con los datos y ubicación activados, 2. El usuario recibe la notificación de que un contacto se ha realizado una pcr y ha dado positivo. 3.El usuario deberá guardad una cuarentena  |
+|Postcondicion| Permanecer en cuarentena y pedir cita para realización de pcr |
+|Excepciones|  |
+|[Importancia]|  Alta |
+|[Prioridad]| Alta  |  
+|[Estado]| Aprobado  |
+
+Requisitos de usuario 
+1. El usuario recibe una notificacion de pcr
+2. El usuario podrá Registrarse
+3. El usuario recibirá Notificaciones de contacto cercano
+4. El usuario recibira Recibir Alertas 
+5. El usuario Recibira cita Prueba Medica
+6. El usuario recibirá Notificaciones de Restricciones
+7. El usuario Recibira el codigo una vez realizada la pcr y si esta es positiva
+8. El usuario recibira el Resultado de la prueba Medica
+9. El usuario puede Activar GPS 
+10. El usuario puede Desactivar GPS
+11. El usuario recibirá Actualizaciones de la Aplicacion
+12. El usuario puede Activar Datos del Movil
+13. El usuario puede Desactivar Datos del Movil
+14. El usuario podrá confirmar cita pcr
+15. El usuario podra rechazar cita medica
+
+#### 6.2.2 Requisitos Funcionales del Subsitema Usuarios  
+Requisitos funcionales:
+1. El sistema mostrará un formulario de registro para el usuario
+2. El sistema informara si un contacto cercano es positivo
+3. El sistema permitirá introducir un codigo de positivo al usuario
+4. El sistema permitira activar y desactivar los datos moviles
+5. El sistema permitira actualizar la aplicacion
+6. El sistema permitira recibir notificaciones de citas medias
+7. El sistema permitira recibir resultado de PCR
+8. El Sistema mostrará las restricciones de la autonomia en la que se encuentre el usuario
+9. El sistema recibirá si hay un incumplimiento de cuarentena
+10. El sistema permitira confirmar o no la cita medica
+11. El sistema permitira activar y desactivar el GPS
+12. El sistema permitira recibir actualizaciones de restricciones
+
+
+| 1	| El sistema mostrará un formulario de registro para el usuario |
+|---------------|------------|
+|Versión|	1.0 (14/12/2020)|
+|Dependencias| Sistema de registro para el usuario  |
+|Descripción| El usuario recibirá un formulario que deberá completar para así estar registrado en la aplicación y poder utilizarla. |
+|Importancia| Alta |
+|Estado| Aprobado |
+|Prioridad|	Alta |
+|Comentarios| El usuario deberá introducir datos reales y la contraseña con un formato valido. |
+
+| 2	|  El sistema permitirá introducir un codigo de positivo al usuario |
+|---------------|------------|
+|Versión|	1.0 (14/12/2020)|
+|Dependencias| Sistema de control PCR |
+|Descripción| El usuario una vez que ha acudido al centro medico y la prueba pcr es positiva deberá introducir el código notificado en la aplicación. |
+|Importancia| Alta  |
+|Estado| Aprobado  |
+|Prioridad| Alta	 |
+|Comentarios| El usuario deberá ser responsable y deberá introducir correctamente el código notificado. |
 
 ### 6.3 Casos de uso y Requisitos Subsistema Ministerio de Sanidad
 
 **RU1**: El ministerio de sanidad recibirá datos de cada autonomía
-**RU3**: El ministerio realizará estadísticas con los datos procesados
-**RU4**: El ministerio notificará al territorio español la modificación de restricciones según los resultados de las estadísticas
+**RU2**: El ministerio realizará estadísticas con los datos procesados
+**RU3**: El ministerio notificará al territorio español la 
+modificación de restricciones según los resultados de las estadísticas
 
-#### 6.3.1 Casos de uso del Subsistema Ministerio de Sanidad
+#### 6.3.1 Casos de uso del Subsitema Ministerio de Sanidad
 ##### 1 Diagramas de Casos de Uso  
-##### 2 Especificación de Actores 
-##### 3 Especificación de Casos de Uso
+![Caso de Uso Usuarios](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/CUministerio.png)
+##### 2 Especificación de Casos de Uso 
 
 |1 | Realizar estadísticas|
 |---------------|------------|
@@ -619,100 +732,258 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios||
 
-#### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad
+#### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad   
 
 **RF1**: El sistema debe almacenar los datos recogidos por las autonomías
 **RF2**: El sistema debe enviar los datos recogidos por las autonomías
 **RF3**: El sistema debe almacenar ls estadísiticas realizadas por el ministerio
 **RF4**: El sistema debe notificar el cambio de restricciones a todos los usuarios
 
-##### 1 Requisitos de Información   
-##### 2 Requisitos de Reglas de Negocio  
-##### 3 Requisitos de Conducta 
-#### 6.3.3 Requisitos No Funcionales del Subsistema Ministerio de Sanidad
-##### 1 Requisitos de Fiabilidad  
-##### 2 Requisitos de Usabilidad  
-##### 3 Requisitos de Eficiencia
-##### 4 Requisitos de Mantenibilidad  
-##### 5 Requisitos de Portabilidad
-##### 6 Requisitos de Seguridad
-##### 7 Otros Requisitos No Funcionales
-
 ### 6.4 Casos de uso y Requisitos Subsistema Centros de Salud
 #### 6.4.1 Casos de uso del Subsitema Centros de Salud
-##### 1 Diagramas de Casos de Uso  
-##### 2 Especificación de Actores 
-##### 3 Especificación de Casos de Uso 
+##### 1 Diagramas de Casos de Uso 
+ ![Caso de Uso Centro de Salud](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/CasosdeUsoCentrosdeSalud.png)
+##### 2 Especificación de Casos de Uso 
+|1| Informar de Cuarentenas |
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Sistema de Notificaciones, Sistema de identificacion de posibles contagios y sistema de control de cuarentena|
+|Precondidcion| Usuario positivo |
+|Descripción| Se invova cuando un usuario es positivo y es posible informar a las fuerzas del orden para comprobrar el cumplimiento |
+|Secuencia Normal|1.Usuario se encuentra en lista de pruebas.  2.Usuario acude a prueba medica.  3.Usuario Positivo  4. Informar de cuarentena.|
+|Postcondicion| Cumplir o no cumplir la cuarentena  |
+|Excepciones| Si Usuario no es Positivo no tiene que guardar cuarentena|
+|Importancia| Alta  |
+|Prioridad| Alta |
+|Comentarios| |
+
+Requisitos de Usuario para los Centros de Salud  
+1. Enviar Datos a las Autonomias
+2. Añadir Usuario a la Lista Pruebas Medicas
+3. Recibir Informacion
+4. Informar Fuerzas del Orden
+5. Uusario Positivo
+6. Informar a Contactos Estrechos
+7. Asignar Codigo
+8. Comprobrar Lista Pruebas
+9. Informar Cuarentenas
+
 #### 6.4.2 Requisitos Funcionales del Subsitema Centros de Salud 
-##### 1 Requisitos de Información   
-##### 2 Requisitos de Reglas de Negocio  
-#### 3 Requisitos de Conducta 
-#### 6.4.3 Requisitos No Funcionales del Subsitema Centros de Salud
-##### 1 Requisitos de Fiabilidad  
-##### 2 Requisitos de Usabilidad  
-##### 3 Requisitos de Eficiencia
-##### 4 Requisitos de Mantenibilidad  
-##### 5 Requisitos de Portabilidad
-##### 6 Requisitos de Seguridad
-##### 7 Otros Requisitos No Funcionales
+1. El sistema enviara un codigo al usuario cuando sea positivo
+2. El sistema informara al usuario de la prueba medica
+3. El sistema informara a las fuerzas del orden de la no presencia del usuario convocado para la prueba medica
+4. El sistema permitira el registro de todos los usuarios
+5. El sistema permitira enviar notificaciones a las fuerzas del orden
+6. El sistema visualizara el check del cumplimiento de las cuarentenas comprobadas por las fuerzas del orden
+7. El sistema permitira introdrucir usuarios a lista de pruebas medicas
+8. El sistema permitira localizar los usuarios en la lista de la pruebas medicas 
+9. El sistema enviara una notificacion a los usuarios positivos
+10. El sistema enviara una notificacion a los contactos estrechos de un usuario positivo
+11. El sistema notificara a las fuerzas del orden la comprobacion de las cuarentenas
+12. El sistema tendra acceso al checkeo de las comprobacion de cuarentenas
+13. El sistema creara codigos aleatorios y unicos
+14. El sistema se comunicara con las autonomias
+15. El sistema recogera informacion de diferentes actores
+16. El sistema enviara datos a las autonomias
+
+|1| El sistema enviara un codigo al usuario cuando sea positivo|
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Sistema de control de PCR|
+|Descripción| El sistema debe enviar un codigo cuando un usuario es positivo, para tener localizado al usuarios con ese codigo unico|
+|Importancia| Alta|
+|Prioridad| Alta |
+|Estado| Aprobado|
+|Comentarios| Este codigo sera unico y se generara de forma automatia|
+
+|2| El sistema informara al usuario de la prueba medica |
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias|Sistema de control de PCR,Sistema de identificacion de posibles contagios,sistema de localizacion,sistema de notificaciones|
+|Descripción|Se debera informar al usuario de que debera acudir al centro de salud a realizarse la PCR.|
+|Importancia| Alta|
+|Prioridad| Alta |
+|Estado| Aprobado|
+|Comentarios|Solo se le informar, pero el usuario podra acudir o no.|
 
 ### 6.5 Casos de uso y Requisitos Subsistema Autonomias
 #### 6.5.1 Casos de uso del Subsitema Autonomias
-##### 1 Diagramas de Casos de Uso  
-##### 2 Especificación de Actores 
-##### 3 Especificación de Casos de Uso 
-#### 6.5.2 Requisitos Funcionales del Subsitema Autonomias  
-##### 1 Requisitos de Información   
-##### 2 Requisitos de Reglas de Negocio  
-##### 3 Requisitos de Conducta 
-#### 6.5.3 Requisitos No Funcionales del Subsitema Autonomias
-##### 1 Requisitos de Fiabilidad  
-##### 2 Requisitos de Usabilidad  
-##### 3 Requisitos de Eficiencia
-##### 4 Requisitos de Mantenibilidad  
-##### 5 Requisitos de Portabilidad
-##### 6 Requisitos de Seguridad
-##### 7 Otros Requisitos No Funcionales
+##### 1 Diagramas de Casos de Uso 
+![Caso de Uso Autonomias](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/CasodeUsoAutonomias.png) 
+##### 2 Especificación de Casos de Uso
 
+Requisitos de Usuario para las Autonomias  
+1. Recoger Datos
+2. Notificar Ministerio de Sanidad
+3. Realizar Estadistica
+4. Comprobar datos
+5. Enviar Datos y Estadistica
+6. Nuevas normas
+7. Informar Usuarios
+8. Informar Centros de Salud 
+#### 6.5.2 Requisitos Funcionales del Subsitema Autonomias 
+
+1. El sistema se comunicara con el Ministerio de Sanidad
+2. El sistema se comunicara con los centros de la salud respectivos
+3. El sistema recogera todos los resultados de los usuarios
+4. El sistema creara una estadistica con los datos recogidos
+5. El sistema evaluara las estadistica, con el fin de edurecer las restricciones o ablandarlas
+6. El sistema enviara los datos y estadisticas realizadas
+7. El sistema informara a los usuarios de las nuevas normas
+8. EL sistema informara a los centros de salud de las nuevas normas
 ### 6.6 Casos de uso y Requisitos Subsistema Rastreadores
 #### 6.6.1 Casos de uso del Subsitema Rastreadores
-##### 1 Diagramas de Casos de Uso  
-##### 2 Especificación de Actores 
-##### 3 Especificación de Casos de Uso 
-#### 6.6.2 Requisitos Funcionales del Subsitema Rastreadores  
-##### 1 Requisitos de Información   
-##### 2 Requisitos de Reglas de Negocio  
-##### 3 Requisitos de Conducta 
-#### 6.6.3 Requisitos No Funcionales del Subsitema Rastreadores
-##### 1 Requisitos de Fiabilidad  
-##### 2 Requisitos de Usabilidad  
-##### 3 Requisitos de Eficiencia
-##### 4 Requisitos de Mantenibilidad  
-##### 5 Requisitos de Portabilidad
-##### 6 Requisitos de Seguridad
-##### 7 Otros Requisitos No Funcionales
+##### 1 Diagramas de Casos de Uso   
+![Caso de Uso Rastreadores](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/RastreadorCasoDeUso.png)
+##### 2 Especificación de Casos de Uso 
 
+equisitos de Usuario para los Rastreadores
+1. El rastreador podrá enviar notificación al usuario de identificación de un contacto estrecho
+2. El rastreador recibirá alerta por usuario positivo
+#### 6.6.2 Requisitos Funcionales del Subsitema Rastreadores  
+
+1. El sistema mostrá una lista de personas que han dado positivo
+2. El sistema enviará notificación de contacto estrecho
 ### 6.7 Casos de uso y Requisitos Subsistema Fuerzas del Orden
 #### 6.7.1 Casos de uso del Subsitema Fuerzas del Orden
 ##### 1 Diagramas de Casos de Uso  
-##### 2 Especificación de Actores 
-##### 3 Especificación de Casos de Uso 
-#### 6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden  
-##### 1 Requisitos de Información   
-##### 2 Requisitos de Reglas de Negocio  
-##### 3 Requisitos de Conducta 
-#### 6.7.3 Requisitos No Funcionales del Subsitema Fuerzas del Orden
-##### 1 Requisitos de Fiabilidad  
-##### 2 Requisitos de Usabilidad  
+![Caso de Uso Fuerzas del Orden](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/PoliciaCasodeUso.png)
+##### 2 Especificación de Casos de Uso 
+
+Requisitos de Usuario para las Fuerzas del Orden
+1. Los cuerpos de seguridad recibirán una lista de personas que deben hacer cuarentena
+2. los cuerpos de seguridad podrán verificar el cumplimiento de cuarentena de un usario
+4. los cuerpos de seguridad notificarán al usuario el incumplimiento de normas
+5. los cuerpos de seguridad recibiran la normativa del ministerio y autonomias
+#### 6.7.2 Requisitos Funcionales del Subsitema Fuerzas del Orden   
+
+1. El sistema mostrará una lista de personas que deben hacer cuarentena
+2. El sistema mostrará una lista de personas que no han acudido a la pcr
+3. El sistema notificará al centro de salud el estado de la cuarentena
+4. El sistema notificará al usuario el no acudir a la pcr
+5. El sistema mostrá la normativa impuesta 
+#### 6.7.3 Requisitos No Funcionales para todo el sistema
+##### 1 Requisitos de Fiabilidad 
+1. El sistema ha de garantizar que la información personal de los usuarios sólo será accesible mediante autorización explícita 
+##### 2 Requisitos de Usabilidad 
+1. El tiempo de aprendizaje del sistema por parte del usuario debe ser inferior a 2 horas.
+2. El sistema debe contar con manuales de usuario y ayuda online.
+3. El sistema proporcionará mensajes de error claros y concisos.
+4. El sistema contará con un menu de barra para que se pueda identificar donde se elaboran procesos como notificación de incumplimiento, etc
 ##### 3 Requisitos de Eficiencia
+1. El sistema debe ser capaz de procesar 3 transacciones por segundo
+2. Toda transacción debe responder al usuario en menos de 3s
+3. El sistema debe soportar 20millones de conexiones simultáneas
 ##### 4 Requisitos de Mantenibilidad  
 ##### 5 Requisitos de Portabilidad
 ##### 6 Requisitos de Seguridad
-##### 7 Otros Requisitos No Funcionales
-
+1. Los permisos de acceso al sistema podrán ser cambiados solamente por los administradores de BD
+2. El sistema a desarrollar debe de hacerlo siguiendo patrones de programación que incrementen la seguridad de los datos.
+3. El sistema debe hacer un backup cada 24 horas.
+##### 7 Requisitos de Dependibilidad
+1. El sistema debe tener una disponibilidad de al menos el 99,99% de las veces que el usuario quiera acceder.
+2. El tiempo de inicio o reinicio del sistema debe ser menor a 1 min.
+3. La probabilidad de fallo del sistema será inferior al 5%.
+##### 8 Otros Requisitos No Funcionales
+1. El nuevo sistema de PANDEMIO debe cumplir con las leyes y reglamentos establecidos por el estado español para protección de datos médicos (legislativo (impuesto); seguridad y salud).
+2. El nuevo sistema se acogerá a las GNU (leyes generales públicas), será gratuito, de código abierto, sin patentes (regulatorio (optativo)).
+3. Las interfaces de comunicación a desarrollar deben cumplir con la ley de tratamiento en condiciones de igualdad para personas con capacidades diferentes (ético, legislativo).
+4. El sistema se desarrollará en java debido a no obligatoriedad por parte del ministerio
+5. El motor de la base de datos donde se almacenará toda la información será MySQL
 ### 6.8 Restricciones Técnicas del Sistema
+
+Las principales barreras en el uso de nuestra aplicación son sobre todo las zonas menos desarrolladas tecnologicamente. En este apartado vamos a ver todos los problemas que podemos tener como zonas muertas de cobertura, dispositivos moviles antiguos (que no sean smartphones) y dispositivos smartphones desactualizados. 
+
+
+
+| 1	| Software anticuado|
+|---------------|------------|
+|Versión|	1.0 (09/12/2020)|
+|Dependencias|  |
+|Descripción| Si el software del dispositivo es antiguo algunas aplicaciones ya sea en IOS o android no pueden ser instaladas dentro de este por lo que se necesita una mejora de dispositivo. |
+|Importancia| Alta |
+|Estado| En proceso |
+|Prioridad|	Alta |
+|Comentarios| El dispositivo deberá ser actualizado por el usuario a una version de Android o IOS que soporte la aplicación, en caso de no poder pués deberá adquirir uno nuevo |
+
+
+| 2	| Dispositivo móvil antiguo |
+|---------------|------------|
+|Versión|	1.0 (09/12/2020)|
+|Dependencias|	|
+|Descripción| Los usuarios de avanzada edad (sobre todo) no tienen en su poder un dispositivo smartphone con acceso a ubicación y a la aplicación lo cual crea un problema. |
+|Importancia| Alta |
+|Estado| En proceso |
+|Prioridad|	Alta |
+|Comentarios| Los dispositivos antiguos no soportan la aplicación al no ser dispositivos smartphone |
+
+
+| 3	| Zonas muertas |
+|---------------|------------|
+|Versión|	1.0 (09/12/2020)|
+|Dependencias|	|
+|Descripción| Algunas zonas más desplobadas o separadas de zonas más desarrolladas tienen problemas de cobertura , por lo que el uso de la aplicación se vuelve bastante dificil. |
+|Importancia| Alta |
+|Estado| En proceso |
+|Prioridad|	Alta |
+|Comentarios| Las zonas en las que la cobertura no llega bien deberían ser alcanzadas por antenas de telefonía más grandes y potentes para mayor control. |
+
 ### 6.9 Requisitos de Integración del Sistema
+
+|1|El sistema usara Base de Datos|
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Sistema de creacion de estadistica y Sistema de identificacion de posibles contagios |
+|Descripción| Todo el sistema tendra una base de datos general donde se guardara la informacion de los usuarios, hasta que sea insignificante donde se realizara la eliminacion de dicha informacion |
+|Importancia| Alta  |
+|Prioridad| Alta |
+|Estado| Aprobado |
+|Comentarios| La informacion sera eliminada cuando la pandemia finalice o sea irrelevante |
+
+|2|EL sistema usara uso de datos del movil|
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Todo el sistema  |
+|Descripción| Los datos del movil se usuaran para tener la app actualizada en todo momento,para saber si existe un usuario que pueda ser contacto estrecho |
+|Importancia| Alta  |
+|Prioridad| Alta |
+|Estado| Aprobado|
+|Comentarios| |
+
+|3|El sistema tenrda que disponer del GPS|
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Todo el sistema|
+|Descripción| Es la intregacion mas importante ya que es como se identifican los contactos estrechos, se tiene controlodo un usuario positivo, sabiendo que el usuario se encuentra en su domicilio.|
+|Importancia| Alta  |
+|Prioridad| Alta |
+|Estado| Aprobado|
+|Comentarios| Para el control de las cuarentenas se impondra un rango de 20 metros|
+
+|4|El sistema cumplira la Ley de Proteccion de Datos |
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Todo el sistema |
+|Descripción| La ley de proteccion se cumplira en todo momento actualizancion la aplicacion si es necesario en los momentos en los que la ley pueda cambiar |
+|Importancia| Alta  |
+|Prioridad| Alta |
+|Estado| Aprobado |
+|Comentarios|El Gobierno cambiara la Ley de Proteccion de Datos a nuestra disposicion |
+
+|5|El sistema no permite usuarios duplicados y eliminacion de usuarios|
+|---------------|------------|
+|[Versión] |1.0 15/12/2020| 
+|Dependencias| Todo el sistema |
+|Descripción| No se permite eliminacion ni usuarios duplicados, con esto se realiza que los usuarios no puedan eliminar la informacion hacia el o saltarse las cuarentenas|
+
+|Importancia| Alta  |
+|Prioridad| Alta |
+|Estado| Aprobado |
+|Comentarios| |
+
 ### 6.10 Información Sobre Trazabilidad
 
 
+
+    
 
