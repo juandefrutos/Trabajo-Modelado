@@ -944,6 +944,24 @@ Las principales barreras en el uso de nuestra aplicación son sobre todo las zon
 
 ### 6.10 Información Sobre Trazabilidad
 
+- CASOS DE USO FRENTEA REQUISITOS GENERALES 
+
+- REQUISITOS DE INFORMACION FRENTE A REQUISITOS GENERALES
+
+- REGLAS DE NEGOCIO FRENTE A REQUISITOS GENERALES 
+
+- REQUISITOS FUNCIONALES FRENTE A REQUISITOS GENERALES 
+
+- REQUISITOS NO FUNCIONALES FRENTE A REQUISITOS GENERALES
+
+- RESTRICCIONES TECNICAS FRENTE A REQUISITOS GENERALES
+
+| | RN01 | RN02 | RN03 | RN04 | RN05 | RN06 |
+| -- | -- | -- | -- | -- | -- | -- |
+| Software anticuado |X |X |X |X |X |X |
+| Dispositivo móvil antiguo |X |X |X |X |X | X|
+| Zonas muertas |X |X |X |X |X |X |
+
 
 
 ## 7.ANEXOS
