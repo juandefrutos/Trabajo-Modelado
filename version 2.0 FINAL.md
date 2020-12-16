@@ -543,7 +543,7 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 - RN05: sistema de control de cuarentena
 - RN06: sistema de creación de estadísticas
 
-|1 | Sistema de notificaciones|
+|RN01 | Sistema de notificaciones|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
 |Dependencias| • Verificar realización de pcr • Verificar cumplimiento de cuarentena|
@@ -554,7 +554,7 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios||
 
-|2 | Sistema de localización|
+|RN02 | Sistema de localización|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
 |Dependencias| • GPS|
@@ -565,7 +565,7 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios|| Aprobado
 
-|3 | Sistema de identificación de posibles contagios|
+|RN03 | Sistema de identificación de posibles contagios|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
 |Dependencias| • GPS|
@@ -576,7 +576,7 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios||
 
-|4 | Sistema de control de pcr|
+|RN04 | Sistema de control de pcr|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
 |Dependencias| • Verificar realización de pcr • Obtener listado de personas que deben hacerse pcr|
@@ -587,7 +587,7 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios||
 
-|5 | Sistema de control de cuarentena|
+|RN05 | Sistema de control de cuarentena|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
 |Dependencias| • GPS • Verificar realización de cuarentena • Obtener listado de personas que deben hacer cuarentena|
@@ -598,7 +598,7 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 |Estado| Aprobado|
 |Comentarios||
 
-|6 | Sistema de creación de estadísticas|
+|RN06 | Sistema de creación de estadísticas|
 |---------------|------------|
 |Versión| 1.0 (14/12/2020)|
 |Dependencias||
@@ -613,31 +613,44 @@ A continuación se detallan los objetivos generales del sistema, es decir, los r
 ##### 1 Diagramas de Casos de Uso
 ![Caso de Uso Usuarios](https://github.com/juandefrutos/Trabajo-Modelado/blob/main/CasodeUsoUsuarioBueno.png)    
 ##### 2 Especificación de Casos de Uso 
-| 1	| RU01 |
+|RU1| El usuario podrá registrarse |
 |---------------|------------|
-|Versión|	1.0 (12/12/2020)|
-|Dependencias| Sistema de registro de usuario |
-|Precondición| Descargar aplicación pandemio en su smartphone  |
-|Descripción| El usuario al descargar la aplicación deberá realizar un formulario para garantizar la seguridad en su apliacion |
-|Secuencia normal| 1. El usuario deberá descargar la aplicación. 2. El usuario deberá introducir su correo y contraseña para crear una cuenta nueva. 3. El usuario deberá introducir su nombre y su dni |
-|Postcondicion| Utilización de la app de forma efectiva |
-|Excepciones| 1.El sistema no responde. 2.El acceso a internet está desctivado. 3.L ubicación GPS está desactivada |
-|[Importancia]|  Alta |
-|[Prioridad]| Alta  |  
-|[Estado]| Aprobado  |
+|Versión|1.0 (12/12/2020)|
+|Dependencias| |
+|Precondición| El usuario se ha descargado e instalado pandemio en su smartphone  |
+|Descripción| El sistema deberá comportarse como se describe en el siguiente caso de uso cuando el usuario se registre |
+|Secuencia normal| 1. El usuario descarga la aplicación. 2. El sistema muestra un formulario de registro 3. El usuario introduce nombre, dni, email y contraseña 4. El sistema confirma el registro con éxito |
+|Postcondicion| El usuario queda registrado en el sistema |
+|Excepciones| 1. El sistema del usuario no es apto para soportar la aplicación. 3. El usuario introduce los campos del formulario de manrea incorrecta, el sistema le informa de ello y le vuelve a pedir los datos  |
+|Importancia|  Alta |
+|Prioridad| Alta  |  
+|Estado| Aprobado  |
 
-| 2	| RU02 |
+| RU2| El usuario recibirá notificación de contacto estrecho |
 |---------------|------------|
-|Versión|	1.0 (12/12/2020)|
-|Dependencias| Sistema de notificaciones |
+|Versión|1.0 (12/12/2020)|
+|Dependencias| - RN01 - RN03 |
 |Precondición| El usuario debe de haber estado en contacto con una persona positiva en covid 19. |
 |Descripción| El usuario recibe una notificación indicando de que alguien de su entorno es positivo en covid 19.|
-|Secuencia normal| 1. El usuario debe de salir de casa con los datos y ubicación activados, 2. El usuario recibe la notificación de que un contacto se ha realizado una pcr y ha dado positivo. 3.El usuario deberá guardad una cuarentena  |
-|Postcondicion| Permanecer en cuarentena y pedir cita para realización de pcr |
-|Excepciones|  |
-|[Importancia]|  Alta |
-|[Prioridad]| Alta  |  
-|[Estado]| Aprobado  |
+|Secuencia normal| 1. El usuario debe de salir de casa con los datos y ubicación activados, 2. El usuario recibe la notificación de que un contacto se ha realizado una pcr y ha dado positivo. 3. El usuario deberá guardad una cuarentena  |
+|Postcondicion| El usuario recibirá una notificación para realización de pcr |
+|Excepciones| |
+|Importancia|  Alta |
+|Prioridad| Alta  |  
+|Estado| Aprobado  |
+
+| RU5 | El usuario recibirá cita prueba médica |
+|---------------|------------|
+|Versión|1.0 (12/12/2020)|
+|Dependencias| -RN01 -RN04 |
+|Precondición| El usuario ha recibido la notificación de contacto estrecho y la notificación de que debe realizarse el pcr|
+|Descripción| El sistema debe comportarse como se describe en el siguiente caso de uso cuando el usuario reciba la cita de prueba médica |
+|Secuencia normal|1. El usuario accede al sistema 2. El sistema notifica realización de pcr 3. El sistema informa del dia y fecha de pcr|
+|Postcondicion| El usuario es informado del dia y fecha a la que se tiene que realizar el pcr|
+|Excepciones| |
+|Importancia|  Alta |
+|Prioridad| Alta  |  
+|Estado| Aprobado  |
 
 Requisitos de usuario 
 - RU1: El usuario podrá registrarse
@@ -707,19 +720,18 @@ Requisitos funcionales:
 |Estado| Aprobado|
 |Comentarios||
 
-|2 | RU 15|
+| RU15 | El ministerio informará de restricciones |
 |---------------|------------|
-|Versión| 1.0 (14/12/2020)|
-|Dependencias| • Sistema de creación de estadísticas|
-|Precondición| Realizar estadísticas|
-|Descripción| El ministerio modificará las restricciones de la población según los resultados de las estadísticas|
-|Secuencia Normal| p1. Acceder pandemio p2. Enviar estadísticas p3. Notificar restricciones |
-|Postcondición| Cambio de restricciones|
-|Excepciones| p1. |
-|Importancia| Alta|
-|Prioridad| Alta|
-|Estado| Aprobado|
-|Comentarios||
+|Versión|1.0 (12/12/2020)|
+|Dependencias| -RN01 -RN06 |
+|Precondición| El ministerio realiza estadisticas con las datos recibidos de las autonomías |
+|Descripción| El sistema deberá comportarse como se describe en el siguiente caso de uso cuando el ministerio informe de restricciones|
+|Secuencia normal| 1. El ministerio recibe datos de pcr positivas de las autonomías 2. El ministerio realiza estadísticas |
+|Postcondicion| Trás examinar esas estadísticas impondrá restricciones al territorio español |
+|Excepciones| 1. si no se reciben los datos, el sistema informará de un error de conexión |
+|Importancia|  Alta |
+|Prioridad| Alta  |  
+|Estado| Aprobado  |
 
 #### 6.3.2 Requisitos Funcionales del Subsistema Ministerio de Sanidad   
 
